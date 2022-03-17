@@ -1,6 +1,6 @@
 <nav>
   <ul style="color: white; font-family: 'Fredoka'">
-    <li class="logo"><img src="images/SVG/logoTW.svg" style="width: 100px;"></li>
+    <li class="logo"> <%= image_tag ('SVG/logoTW'), style:"width: 100px;" %></li>
     <a href="#partieConcept" style="text-decoration: none; color: white">
       <li class="button"> l'App </li>
     </a>
@@ -17,6 +17,7 @@
     </a>
   </ul>
 </nav>
+
 <div class="responsive-nav" style="position: absolute; top:6%; z-index: 3">
   <img src="images/SVG/path_navFichier 19.svg"
        style="position: absolute; top:0; z-index: 2; margin-left: 2em; left:-10%; width:40px;" class="menu-path">
@@ -58,7 +59,7 @@
     </h1>
   </div>
   <div class="img-relative-container">
-    <img src="images/mockup2.png" class="mockup2">
+  <%= image_tag 'mockup2', class: "mockup2" %>
     <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_rqo8mcum.json" background="transparent"
                    speed="0.9" class="intro-waves" loop autoplay></lottie-player>
   </div>
@@ -66,8 +67,9 @@
 
 <!-- WAVES BACKGROUND -->
 
+<%= image_tag 'SVG/desktop-waves-cover3Fichier 38', class:"desktop-waves", style:"position:absolute; z-index:-1; top:0;right:0; max-width:103%;"%>
 <!-- <img src="/images/SVG/desktop-waves-cover3Fichier 38.svg" class="desktop-waves"
-    style="position:absolute; z-index:-1; top:0;right:0; max-width:103%;"></img> -->
+    style=""></img> -->
 
 <!-- <iframe src="images/SVG/desktop-waves-cover3Fichier 38.svg" class="desktop-waves"
     style="position:absolute; z-index:-1; top:0;right:-0.8%; width:102%; height:100%;"></iframe> -->
@@ -377,6 +379,7 @@
      x="0px" y="0px" viewBox="0 0 1300 350" xml:space="preserve">
   <style type="text/css">
       .st1 {
+        display:none;
           opacity: 0.6;
           fill: #0099ff;
           enable-background: new;
