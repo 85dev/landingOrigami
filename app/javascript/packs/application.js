@@ -11,3 +11,16 @@ import "channels"
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
+import "stylesheets/application";
+import "@lottiefiles/lottie-player";
+
+
+document.addEventListener('turbolinks:load', () => {
+    const click = document.querySelector('.menu-path');
+    const dropdown = document.querySelector('.responsive-menu');
+
+    click.addEventListener('click', () => {
+        dropdown.classList.toggle('newlist');
+    })
+})

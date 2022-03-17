@@ -1,5 +1,445 @@
-<h1>Hello world!</h1>
-<%= form_for @user do |f| %>
-<%= f.text_field :email %>
-  <%= f.submit "Envoyer" %>
-<% end %>
+<nav>
+  <ul style="color: white; font-family: 'Fredoka'">
+    <li class="logo"><img src="images/SVG/logoTW.svg" style="width: 100px;"></li>
+    <a href="#partieConcept" style="text-decoration: none; color: white">
+      <li class="button"> l'App </li>
+    </a>
+    <a href="#Développement" style="text-decoration: none; color: white">
+      <li class="button"> le Développement </li>
+    </a>
+
+    <a href="#Vlogs" style="text-decoration: none; color: white">
+      <li class="button"> Vlogs & Newsletter </li>
+    </a>
+
+    <a href="#Contacts" style="text-decoration: none; color: white">
+      <li class="button"> Contacts </li>
+    </a>
+  </ul>
+</nav>
+<div class="responsive-nav" style="position: absolute; top:6%; z-index: 3">
+  <img src="images/SVG/path_navFichier 19.svg"
+       style="position: absolute; top:0; z-index: 2; margin-left: 2em; left:-10%; width:40px;" class="menu-path">
+  <ul class="responsive-menu" style="font-family: 'Fredoka'">
+    <p style="color:black; font-size: 1.3em; color: black;">🛥️ Menu</p>
+    <a href="#partieConcept" style="text-decoration: none; color: white">
+      <li class="button">📱 l'App </li>
+    </a>
+    <a href="#Développement" style="text-decoration: none; color: white">
+      <li class="button">💻 le Développement </li>
+    </a>
+
+    <a href="#Vlogs" style="text-decoration: none; color: white">
+      <li class="button">🗞️ Vlogs & Newsletter </li>
+    </a>
+
+    <a href="#Contacts" style="text-decoration: none; color: white">
+      <li class="button">📇 Contacts </li>
+    </a>
+  </ul>
+</div>
+
+<!-- SLOGAN -->
+
+<div class="img-container" style="margin-top: 1em;">
+  <div class="text-container">
+    <h1 class="desktop-text" style="max-width:90%; margin: 0 auto; padding-right: 0.5em;     color:white;
+      text-shadow: 5px 5px 1px #234547;">
+      <p class="strong3">Rencontrez maintenant
+        vos
+        amis de demain.</p>
+    </h1>
+    <h1 class="desktop-text2"
+        style="max-width:90%; margin: 0 auto; padding-right: 0.5em; text-shadow: 5px 5px 1px #234547;">
+      <p class="strong2">Rencontrez maintenant
+        vos
+        amis de</p>
+      <p class="strong">demain.</p>
+    </h1>
+  </div>
+  <div class="img-relative-container">
+    <img src="images/mockup2.png" class="mockup2">
+    <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_rqo8mcum.json" background="transparent"
+                   speed="0.9" class="intro-waves" loop autoplay></lottie-player>
+  </div>
+</div>
+
+<!-- WAVES BACKGROUND -->
+
+<!-- <img src="/images/SVG/desktop-waves-cover3Fichier 38.svg" class="desktop-waves"
+    style="position:absolute; z-index:-1; top:0;right:0; max-width:103%;"></img> -->
+
+<!-- <iframe src="images/SVG/desktop-waves-cover3Fichier 38.svg" class="desktop-waves"
+    style="position:absolute; z-index:-1; top:0;right:-0.8%; width:102%; height:100%;"></iframe> -->
+
+<img src="/images/SVG/responsive-waves-cover4Fichier 39.svg" class="responsive-waves"
+     style="position:absolute; z-index:-4; right:-2%; width: 104%; top:10%;"> -->
+
+<div class="card">
+  <h2 class="defiling"
+      style="font-family: 'Fredoka'; font-weight:300; margin-left: 2.5em; color: black; font-size:1.6em; margin-right: 2em;">
+    APPLICATION
+    EN
+    COURS
+    DE...<br>
+    <div class="scroller" style="font-weight: 600; font-family: 'Fredoka';">
+                <span>
+                    DÉVELOPPEMENT ⚠️<br>
+                    CRÉATION ⚠️<br>
+                    CONCEPTION ⚠️<br>
+                    CONSTRUCTION ⚠️<br>
+                </span>
+    </div>
+  </h2>
+</div>
+<p class="content-text"> Bonjour à tous, vous qui nous lisez ! Nous sommes <strong>Clément </strong>et
+  <strong>Nicolas</strong>, deux
+  développeurs passionés par la tech, le design et l'entreprenariat.
+  Avant de parler d'autre chose, laissez-nous vous présenter Origami...
+</p><br><br>
+
+<div class="between-container" style="margin-top: 2em; margin-bottom: 1em;">
+  <h1 class="underlined-text3" style="font-size: 2.8em; color: black;" id="partieConcept"> A qui
+    s'adresse Origami ? 🤔 </h1>
+</div>
+
+
+<div class="third-container">
+  <ul class="content-text" id="responsive-partie">
+    <h2>Vous venez de...</h2>
+    <li style="padding-bottom: 0.4em;">Changer de ville pour une <strong>opportunité professionelle,</strong>
+    </li>
+    <li style="padding-bottom: 0.4em;">Déménager pour la poursuite de vos études, </li>
+    <li style="padding-bottom: 0.4em;">Vivre une période de grand <strong>changement</strong> dans votre vie ?
+    </li>
+  </ul>
+  <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_WAMQ5G.json" background="transparent"
+                 speed="1" style="max-width: 260px; min-width: 200px;" loop autoplay></lottie-player>
+</div>
+
+<div class="fourth-container">
+  <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_wloxwco0.json" background="transparent"
+                 speed="1" class="phone-msg" style="max-width: 350px; min-width: 250px;" loop autoplay></lottie-player>
+  <ul class="content-text" id="responsive-partie">
+    <h2>...et souhaitez naturellement...</h2>
+    <li style="padding-bottom: 0.4em;">Agrandir votre <strong>cercle d'amis</strong> au-delà de votre milieu
+      professionnel ou universitaire ?
+    </li>
+    <li style="padding-bottom: 0.4em;">Rencontrez des personnes ayant les <strong>mêmes centres
+    </strong>d'intérêt que vous ?</li>
+    <li style="padding-bottom: 0.4em;"><strong>Eviter de passer par des apps de rencontre </strong>où drague et
+      amitié se confondent...
+    </li>
+  </ul>
+</div>
+
+<div class="random-container-random">
+  <h2 class="underlined-text3"
+      style="max-width: 80%; margin: 0 auto; margin-top: 1em; font-family:'Quantify'; font-size: 2.8em; color: black;">
+    ... alors
+    Origami est fait pour vous ! </h2>
+</div>
+
+
+<div class="fifth-container">
+  <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_z0jt5alc.json" background="transparent"
+                 speed="1" style="max-width: 900px; height: 300px;" class="astronomie" loop autoplay></lottie-player>
+  <ul class="content-text">
+    <h2 class="fonctionnement" style="font-family: 'Quantify';"> Et le fonctionnement Jamy ?
+      &#128512; </h2>
+    <li style=" padding:0.5em;"> <strong>Vous vous inscrivez en quelques swipes</strong> pour renseigner vos
+      centres d'intérêt,
+      votre personnalité et les
+      infos dont l'app a besoin (principalement <strong>la ville</strong> où vous souhaitez rencontrer du
+      monde, votre âge et
+      votre genre),</li>
+    <li style="padding:0.5em;">L'app organise des <strong>groupes</strong> de conversation virtuelle en
+      fonction
+      de votre personnalité et centres d'intérêt, comme sur une messagerie classique, à quelques détails
+      près... 😏
+    </li>
+  </ul>
+</div>
+
+<div class="fifth-container" style="margin-top:-1em;">
+  <ul class="content-text">
+    <li style="padding:0.5em;"><strong>Notre algorhitme vous inclut </strong> dans un groupe de 5 personnes
+      (dont vous), prêts
+      à discuter et à vous
+      rencontrer dans une même ville ! </li>
+    <li style="padding:0.5em;"><strong>Bonus : </strong> Un sympathique robot ('Combo' le Robot) vous aide à
+      <strong> briser la
+        glace </strong>
+      lors
+      des premiers échanges ! En effet, ce robot connaît tous les points communs du groupe et il s'en amusera
+      pour vous faire causer... <strong>plutôt cool</strong> non ?
+    </li>
+    <li style="padding:0.5em;"><strong>Bonus #2 : </strong> En
+      plus, il vous accompagnera dans votre conversation en <strong>indiquant des évènements dans votre
+      ville
+    </strong>liés aux
+      centres d'intérêt du groupe !</li>
+
+  </ul>
+</div>
+
+<p class="content-text"
+   style="color:black; font-family: 'Quantify'; font-size: 2.9em; text-align:center; margin-top: 1em;"><strong>
+  Objectif final :
+</strong><br><br>
+
+<div class="second-container" style="display: flex; max-width: 80%; margin: 0 auto; margin-top: -3em;">
+  <div class="second-container" style="flex-direction: column; justify-content: center;">
+    <p class="content-text" style="margin-bottom: 1em;">
+      Que le
+      groupe passe d'une
+      conversation
+      digitale à ... </p>
+
+    <p class="underlined-text" id="rencontre">
+      <strong>une rencontre in real life !
+      </strong>
+    </p>
+
+    <lottie-player src="https://assets1.lottiefiles.com/private_files/lf30_llpflzsi.json"
+                   background="transparent" speed="1" style="max-width: 500px;" loop autoplay></lottie-player>
+
+    <p class="content-text" style="margin-bottom: 3em;"> Souscrivez à la Newsletter, aux réseaux sociaux et à la
+      chaîne YouTube pour rester
+      informés
+      !
+    </p>
+  </div>
+</div>
+
+<div class="first-container">
+  <h2 style="font-size: 1.8em;">Vous ne passerez plus un vendredi soir sans bonne compagnie.</h2>
+  <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_6aYlBl.json" background="transparent"
+                 speed="1" style="position: relative; max-width: 500px;" loop autoplay></lottie-player>
+  <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_3ki8odep.json" background="transparent"
+                 speed="1" style="position: absolute; z-index: -2; opacity: 0.8;" loop autoplay>
+  </lottie-player>
+</div>
+
+
+<div class="between-container">
+  <h2 class="underlined-text" id="Développement">Le
+    développement de l'app</h2>
+</div>
+<div class="content-text" style="">
+  <div class="x3container" style="margin-top: 2em;">
+    En arrivant à <strong>Lyon,</strong> nous nous sommes rendus compte d'une problématique autour de la
+    création du
+    lien social et
+    de la rencontre amicale dans sa globalité.
+    Après beaucoup
+    d'échanges autour du sujet avec notre entourage, nous en arrivons à cette <strong>conclusion :</strong>
+    Les
+    nouveaux
+    arrivants des grandes villes rencontrent des difficultés à rencontrer de nouvelles personnes et donc...
+    à se
+    faire de <strong>nouveaux
+    amis</strong> en dehors du cadre professionnel. <br><br>
+    Cependant, les arrivants des grandes villes
+    ne
+    sont
+    pas les
+    seuls
+    concernés
+    par
+    la <strong>problématique.</strong><br></br>
+    En approfondissant le sujet, nous trouvons d'autres cas de figure
+    où Origami pourrait <strong>être utile.</strong> Nous pensons donc aux étudiants qui changent de ville
+    pour
+    poursuivre
+    leurs études ainsi
+    qu'aux personnes en période d'intense changement de cercle social. A l'heure où les couples qui se
+    créent
+    autour
+    de nous se font grâce aux applications de rencontre, nous entamons une première réflexion sur le sujet
+    avec
+    cette idée d'app destinée à la rencontre amicale.<br><br>
+
+    Après une <strong>première version</strong> de l'application développée lors d'un bootcamp intensif,
+    nous
+    faisons une
+    pause autour de la réflexion de Origami pour se consacrer à diverses missions free-lance.
+  </div>
+</div>
+
+<div class="random-container" style="max-width:80%; margin: 0 auto;">
+  <h2 class="underlined-text" id="Vlogs"
+      style="font-size:2.8em; margin-top:1em; margin-bottom: 1em; margin-left: 0 !important;">
+    Les Vlogs & la
+    Newsletter</h2>
+</div>
+
+<div class="content-text">
+  Une fois la bonne organisation de travail mise en place, nous commençons
+  maintenant la structuration et le code de l'app. Nous nous engageons à tenir un <strong>journal de bord
+</strong>sous
+  forme de Vlog, disponibles sur notre chaîne YoutTube
+  afin de tenir les intéréssés au courant.</div>
+<h2
+  style="max-width:80%; text-align: center; margin: 0 auto; color:black; font-family: 'Fredoka'; font-size:2em; margin-top:1.2em; margin-bottom:-0.8em;">
+  Dans cette série de vlogs, nous
+  parlerons
+  notamment : </h2>
+<ol class="content-text">
+  <li style="padding-top: 1em;"> 🤠 De l'entreprenariat, des problématiques marketing, de communication, de
+    tech, </li>
+  <li style="padding-top: 1em;"> 🖥️ De dev, de programmation, de code, </li>
+  <li style="padding-top: 1em;"> 🤣 Nous raconterons quelques <strong>petites blagues </strong> car nous
+    sommes
+    des
+    polissons, </li>
+  <li style="padding-top: 1em; margin-bottom: 2em;"> 🐳 Au-delà des sujets abordés, vous vivrez avec nous une
+    <strong>immersion totale
+    </strong> dans la conception du
+    projet
+    !
+  </li>
+</ol>
+<div class="random-container-yt">
+  <a href="https://youtube.com/watch?v" target="_blank">
+    <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_EAfMOs/Youtube.json"
+                   background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay>
+    </lottie-player>
+  </a>
+</div>
+<div class="content-text" style="margin-top: 2em;">
+  En Mars 2022, nous entamons les préparatifs (charte
+  graphique, logo, problématiques tech, machine learning, etc.) du
+  développement de l'app pour entamer la conception en Avril 2022.<br></br>
+  Pour <strong>nous soutenir </strong>dans le développement et nous soumettre
+  vos remarques, nous
+  mettons à la disposition de tous un formulaire ainsi qu'une <strong> newsletter </strong> afin de rester
+  informé. Vous pourrez également nous indiquer tout ce que vous pensez de notre concept. Chaque retour
+  sera lu et pris en compte !<br></br>
+  Nous cherchons également des <strong>bêta-testeurs</strong> afin de tester
+  l'application dans des conditions réelles. Si vous souhaitez rejoindre cette équipe de bêta-testing,
+  vous pourrez le préciser dans le
+  formulaire en cochant la case dédiée.
+</div>
+
+
+<div class="random-container">
+  <h2 class="underlined-text2" id="Contacts" style="font-size:2.8em; color:black;"> Derrière Origami...
+  </h2>
+  <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_49MPL9.json" background="transparent"
+                 speed="1" class="flying-paper" style="position: absolute; z-index: -2; width:20%; left: 50%;" loop autoplay>
+  </lottie-player>
+</div>
+
+<div class="img-container-head">
+  <div class="head-container">
+    <img src="images/head_clement.png" class="head" alt="tête de clément"
+         style="background-color: #5bbdff; border-radius: 50%; padding: 1.2em; padding-right: 3em; padding-left: 3em; width: 145px;">
+    <p class="text" style="font-family:'Fredoka'; text-align: center;"> <strong>Clément Sapt </strong><br>
+      Co-founder & CTO <br>
+      contact@origami-app.fr </p>
+  </div>
+  <div class="head-container">
+    <img src="images/nico_head.png" class="head" alt="tête de clément"
+         style="background-color: #fffd70; border-radius: 50%; padding: 1.2em; padding-right: 3em; padding-left: 3em; width: 160px;">
+    <p class="text" style="font-family:'Fredoka'; text-align: center;"><strong>Nicolas Mercier </strong><br>
+      Founder & CEO <br>
+      contact@origami-app.fr </p>
+  </div>
+</div>
+
+<div class="content-text">
+  Après s'être rencontrés lors d'un Bootcamp intensif (Le Wagon) à Lyon fin 2021, Clément Sapt et Nicolas
+  Mercier
+  se lient
+  d'amitié
+  autour d'une passion commune : le développement, le design et le produit. <br></br>
+  C'est <strong>Clément</strong> qui se chargera de la partie back-end du projet.
+  Avec un solide background
+  en programmation
+  web et software ainsi qu'un passage à l'école 42, il excelle dans la gestion de la data et
+  l'algorhitmie. <br></br>
+  Quant à <strong>Nicolas</strong>, après s'être vu diplomé d'un Master en
+  Marketing & Communication, il décide d'ajouter une corde à son arc et découvre le développement web
+  pendant le bootcamp au Wagon. Doté de solides expériences professionnelles en développement web, design
+  UX/UI & animation, il a l'idée de l'application en parlant au cercle d'étudiants en reconversion
+  rencontrés au Wagon. <br><br>
+  Pour <strong>soutenir le projet,</strong> abonnez-vous à la chaîne Youtube, aux réseaux sociaux et
+  inscrivez-vous à la newsletter
+  !
+
+  <div class="first-container" style="padding:2em; font-family: 'Quantify'; flex-direction: column;">
+    <p>À bientôt sur Origami !</p>
+  </div>
+</div>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="waves1"
+     x="0px" y="0px" viewBox="0 0 1300 350" xml:space="preserve">
+  <style type="text/css">
+      .st1 {
+          opacity: 0.6;
+          fill: #0099ff;
+          enable-background: new;
+      }
+  </style>
+
+  <path class="st1" d="M 0 250 C 600 450 650 100 1300 250 L 1300 550 L 0 550 L 0 250">
+    <animate attributeName="d" dur="5s" begin="1s" values="M 0 250 C 600 450 650 100 1300 250 L 1300 550 L 0 550 L 0 250;
+            M 0 250 C 600 100 650 450 1300 250 L 1300 550 L 0 550 L 0 250;
+            M 0 250 C 600 450 650 100 1300 250 L 1300 550 L 0 550 L 0 250" repeatCount="indefinite" />
+  </path>
+
+  <path class="st1" d="M 0 250 C 600 100 650 450 1300 250 L 1300 550 L 0 550 L 0 250">
+    <animate attributeName="d" dur="5s" values="M 0 250 C 600 100 650 450 1300 250 L 1300 550 L 0 550 L 0 250;
+            M 0 250 C 600 450 650 100 1300 250 L 1300 550 L 0 550 L 0 250;
+            M 0 250 C 600 100 650 450 1300 250 L 1300 550 L 0 550 L 0 250" repeatCount="indefinite" />
+  </path>
+
+  <path class="st1" d="M 0 250 C 950 350 950 150 1300 250 L 1300 550 L 0 550 L 0 250">
+    <animate attributeName="d" dur="5s" begin="2s" values="M 0 250 C 950 350 950 150 1300 250 L 1300 550 L 0 550 L 0 250;
+            M 0 250 C 350 150 350 350 1300 250 L 1300 550 L 0 550 L 0 250;
+            M 0 250 C 950 350 950 150 1300 250 L 1300 550 L 0 550 L 0 250" repeatCount="indefinite" />
+  </path>
+
+  <path class="st1" d="M 0 250 C 350 150 350 350 1300 250 L 1300 550 L 0 550 L 0 250">
+    <animate attributeName="d" dur="5s" values="M 0 250 C 350 150 350 350 1300 250 L 1300 550 L 0 550 L 0 250;
+            M 0 250 C 950 350 950 150 1300 250 L 1300 550 L 0 550 L 0 250;
+            M 0 250 C 350 150 350 350 1300 250 L 1300 550 L 0 550 L 0 250" repeatCount="indefinite" />
+  </path>
+</svg>
+
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="waves2"
+     x="0px" y="0px" viewBox="0 0 1300 350" xml:space="preserve">
+  <style type="text/css">
+      .st1 {
+          opacity: 0.6;
+          fill: #0099ff;
+          enable-background: new;
+      }
+  </style>
+
+  <path class="st1" d="M 0 250 C 600 450 650 100 1300 250 L 1300 550 L 0 550 L 0 250">
+    <animate attributeName="d" dur="5s" begin="1s" values="M 0 250 C 600 450 650 100 1300 250 L 1300 550 L 0 550 L 0 250;
+            M 0 250 C 600 100 650 450 1300 250 L 1300 550 L 0 550 L 0 250;
+            M 0 250 C 600 450 650 100 1300 250 L 1300 550 L 0 550 L 0 250" repeatCount="indefinite" />
+  </path>
+
+  <path class="st1" d="M 0 250 C 600 100 650 450 1300 250 L 1300 550 L 0 550 L 0 250">
+    <animate attributeName="d" dur="5s" values="M 0 250 C 600 100 650 450 1300 250 L 1300 550 L 0 550 L 0 250;
+            M 0 250 C 600 450 650 100 1300 250 L 1300 550 L 0 550 L 0 250;
+            M 0 250 C 600 100 650 450 1300 250 L 1300 550 L 0 550 L 0 250" repeatCount="indefinite" />
+  </path>
+
+  <path class="st1" d="M 0 250 C 950 350 950 150 1300 250 L 1300 550 L 0 550 L 0 250">
+    <animate attributeName="d" dur="5s" begin="2s" values="M 0 250 C 950 350 950 150 1300 250 L 1300 550 L 0 550 L 0 250;
+            M 0 250 C 350 150 350 350 1300 250 L 1300 550 L 0 550 L 0 250;
+            M 0 250 C 950 350 950 150 1300 250 L 1300 550 L 0 550 L 0 250" repeatCount="indefinite" />
+  </path>
+
+  <path class="st1" d="M 0 250 C 350 150 350 350 1300 250 L 1300 550 L 0 550 L 0 250">
+    <animate attributeName="d" dur="5s" values="M 0 250 C 350 150 350 350 1300 250 L 1300 550 L 0 550 L 0 250;
+            M 0 250 C 950 350 950 150 1300 250 L 1300 550 L 0 550 L 0 250;
+            M 0 250 C 350 150 350 350 1300 250 L 1300 550 L 0 550 L 0 250" repeatCount="indefinite" />
+  </path>
+</svg>
