@@ -66,14 +66,15 @@
 
 <!-- WAVES BACKGROUND -->
 
-<%= image_tag 'SVG/desktop-waves-cover3Fichier 38', class:"desktop-waves", style:"position:absolute; z-index:-1; top:0;right:-10; max-width:103%;"%>
+<%= image_tag 'SVG/desktop-waves-cover3Fichier 38', class:"desktop-waves", style:"position:absolute; z-index:-1; top:-1%; right:-1%; width:103%;"%>
     
-<%= image_tag "SVG/responsive-waves-cover4Fichier 39.svg", class:"responsive-waves", style:"position:absolute; z-index:-4; right:-2%; width: 104%; top:10%;" %>
+<%= image_tag "SVG/responsive-waves-cover4Fichier 39.svg", class:"responsive-waves", style:"position:absolute; z-index:-4; right:-2%; width: 104%; top:10%; " %>
 
+<!-- APP EN DEVELOPPEMENT -->
 
 <div class="card">
   <h2 class="defiling"
-      style="font-family: 'Fredoka'; font-weight:300; margin-left: 2.5em; color: black; font-size:1.6em; margin-right: 2em;">
+      style="font-family: 'Fredoka'; font-weight:300; margin-left: 2.5em; color: black; font-size:1.6em; margin-right: 2em; margin-top: 6em;">
     APPLICATION
     EN
     COURS
@@ -319,25 +320,20 @@
 </div>
 
 
-<div class="random-container">
+<div class="between-container" style="margin-top: 1.5em; margin-bottom: 1.5em;">
   <h2 class="underlined-text2" id="Contacts" style="font-size:2.8em; color:black;"> Derrière Origami...
   </h2>
-  <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_49MPL9.json" background="transparent"
-                 speed="1" class="flying-paper" style="position: absolute; z-index: -2; width:20%; left: 50%;" loop autoplay>
-  </lottie-player>
 </div>
 
 <div class="img-container-head">
   <div class="head-container">
-    <img src="images/head_clement.png" class="head" alt="tête de clément"
-         style="background-color: #5bbdff; border-radius: 50%; padding: 1.2em; padding-right: 3em; padding-left: 3em; width: 145px;">
+  <%= image_tag 'head_clement', class:'head' , style:"background-color: #5bbdff; border-radius: 50%; padding: 1.2em; padding-right: 3em; padding-left: 3em; width: 145px;" %>
     <p class="text" style="font-family:'Fredoka'; text-align: center;"> <strong>Clément Sapt </strong><br>
       Co-founder & CTO <br>
       contact@origami-app.fr </p>
   </div>
   <div class="head-container">
-    <img src="images/nico_head.png" class="head" alt="tête de clément"
-         style="background-color: #fffd70; border-radius: 50%; padding: 1.2em; padding-right: 3em; padding-left: 3em; width: 160px;">
+  <%= image_tag 'nico_head', class:"head", style:"background-color: #fffd70; border-radius: 50%; padding: 1.2em; padding-right: 3em; padding-left: 3em; width: 160px;" %>
     <p class="text" style="font-family:'Fredoka'; text-align: center;"><strong>Nicolas Mercier </strong><br>
       Founder & CEO <br>
       contact@origami-app.fr </p>
