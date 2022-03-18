@@ -217,6 +217,14 @@
       informés
       !
     </p>
+
+    <div class="form-group" style="display: flex; justify-content: center; color: black; font-family: 'Fredoka'">
+      <%= form_with do |form| %>
+        <%= form.label :query, "Search for:" %>
+        <%= form.text_field :query %>
+        <%= form.submit "Search" %>
+      <% end %>
+    </div>
   </div>
 </div>
 
@@ -231,7 +239,8 @@
 
 
 <div class="between-container">
-  <h2 class="underlined-text" id="Développement">Le
+  <h2 class="underlined-text" style="max-width: 80%;
+    margin: 0 auto;" id="Développement">Le
     développement de l'app</h2>
 </div>
 <div class="content-text" style="">
