@@ -222,21 +222,25 @@
 </div>
 
       <%= form_with do |form| %>
-        <div class="form-group" style="padding: 0.5em">
-            <%= form.label :query, "Nom et prénom :", style:"margin-bottom: 0.2em;" %>
-            <%= form.text_field :query, placeholder: "Michel Albertino", style: "font-family: 'Fredoka'; font-size: 0.95em;" %>
+        <div class="form-group" style="padding: 1em">
+            <%= form.label :query, "Nom :", style:"margin-bottom: 0.2em;" %>
+            <%= form.text_field :query, placeholder: "Michel", style: "font-family: 'Fredoka'; font-size: 0.95em;" %>
 
-            <%= form.label :query, "Email :", style:"margin-bottom: 0.2em;  margin-top: 0.2em;" %>
+            <%= form.label :query, "Prénom :", style:"margin-bottom: 0.2em; margin-top: 0.6em" %>
+            <%= form.text_field :query, placeholder: "Albertino", style: "font-family: 'Fredoka'; font-size: 0.95em;" %>
+
+            <%= form.label :query, "Âge :", style:"margin-bottom: 0.2em; margin-top: 0.6em;" %>
+            <%= form.text_field :query, placeholder: "18", style: "font-family: 'Fredoka'; font-size: 0.95em;"  %>
+
+            <%= form.label :query, "Email :", style:"margin-bottom: 0.2em;  margin-top: 0.6em;" %>
             <%= form.text_field :query, placeholder: "michel@example.com", style: "font-family: 'Fredoka'; font-size: 0.95em;"  %>
 
-            <%= form.label :query, "Ville :", style:"margin-bottom: 0.2em;  margin-top: 0.2em;" %>
+            <%= form.label :query, "Ville :", style:"margin-bottom: 0.2em;  margin-top: 0.6em;" %>
             <%= form.text_field :query, placeholder: "Lyon", style: "font-family: 'Fredoka'; font-size: 0.95em;"  %>
 
-            <%= form.label :query, "Situation pro :", style:"margin-bottom: 0.2em;  margin-top: 0.2em;" %>
-            <%= form.text_field :query, placeholder: "Employé, entrepreneur...", style: "font-family: 'Fredoka'; font-size: 0.95em;"  %>
+            <%= form.label :query, "Situation pro :", style:"margin-bottom: 0.2em;  margin-top: 0.6em;" %>
+            <%= form.text_field :query, placeholder: "Cadre, étudiant...", style: "font-family: 'Fredoka'; font-size: 0.95em;"  %>
           
-            <%= form.label :query, "Âge :", style:"margin-bottom: 0.2em; margin-top: 0.2em;" %>
-            <%= form.text_field :query, placeholder: "", style: "font-family: 'Fredoka'; font-size: 0.95em;"  %>
 
             <div class="checkbox-container" style="margin-top:0.5em;">
             <ul>
