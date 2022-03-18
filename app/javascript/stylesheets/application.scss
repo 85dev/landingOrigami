@@ -72,6 +72,43 @@ body {
   }
 }
 
+@keyframes blink {
+  0% { 
+    color: rgb(255, 255, 255); 
+  }
+  5% { 
+    color: rgb(170, 0, 192); 
+    transform: scale(1.05);
+  }
+  10% { 
+    color: rgb(255, 255, 255); 
+    transform: scale(1.0);
+  }
+  44% { 
+    color: rgb(255, 255, 255); 
+  }
+  50% { 
+    color: rgb(89, 255, 227); 
+  }
+  56% { 
+    color: rgb(255, 255, 255); 
+  }
+  84% { 
+    color: rgb(255, 255, 255); 
+  }
+  90% { 
+    color: rgb(119, 205, 255); 
+  }
+  96% { 
+    color: rgb(255, 255, 255); 
+  }
+}
+
+.strong3 {
+  text-shadow: 5px 6px 1.5px #222222;
+}
+
+
 .waves2 {
   enable-background:new 0 0 1300 350;
   max-width:100%;
@@ -558,6 +595,7 @@ nav ul li.button {
 
   .strong2 {
     line-height: 1;
+    animation: blink 2s linear infinite;
   }
 
   .strong {
@@ -565,6 +603,7 @@ nav ul li.button {
     color:white;
     text-shadow: 5px 5px 1px #233853;
     margin-top: -0.8em;
+    animation: blink 2s infinite;
   }
 
   .mockup2{
