@@ -657,6 +657,7 @@ nav ul li.button {
   .intro-waves{
     position: absolute;
     top: 0;
+  padding: 0;
   }
 
   .second-container {
@@ -767,6 +768,19 @@ nav ul li.button {
     margin-top: 4.5em;
     margin-left:0.5em;
     opacity: 1;
+  }
+
+  .strong2 {
+    line-height: 1;
+    margin-left: -0.3em;
+  }
+
+  .strong {
+    font-size: 1.4em;
+    color:white;
+    text-shadow: 5px 5px 1px #233853;
+    margin-top: -0.8em;
+    margin-left: -0.3em;
   }
 
   .waves1 {
