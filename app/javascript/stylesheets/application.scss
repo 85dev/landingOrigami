@@ -111,6 +111,7 @@ body {
   display: flex;
   justify-content: center;
   margin:  0 auto;
+margin-top: 6em;
 }
 .note {
   font-size: 0.8em;
@@ -588,13 +589,17 @@ nav ul li.button {
     color: black !important;
   }
 
+  .card {
+  margin-top: 1em;
+  }
+
   .underlined-text {
     margin-left: 0 !important;
   }
 
   .logo {
     margin-right: 0em;
-    margin-top: -1em;
+    margin-top:0.4em;
   }
 
   .first-container {
