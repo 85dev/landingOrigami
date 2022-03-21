@@ -12,13 +12,12 @@
 }
 
 body {
-  max-width: 100%;
+  max-width: 101%;
   background-color: rgb(255, 255, 255);
   color: white;
   margin: 0 auto;
   font-family: "Quantify";
   scroll-behavior: smooth;
-  overflow: auto;
   overflow-x: hidden;
 }
 
@@ -411,9 +410,67 @@ nav ul li.button {
   font-size: 1.3em;
   margin: 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column-reverse;
   align-items: center;
+}
+
+// TITLE COVER //
+
+.title-cover {
+  top: 123%;
+ width: 105%;
+ left:-1%;
+ position: absolute;
+ z-index: -3;
+ opacity: 0.85;
+}
+
+.title-cover2 {
+  top: 231%;
+ width: 105%;
+ left:-1%;
+ position: absolute;
+ z-index: -3;
+ opacity: 0.85;
+}
+
+.title-cover3 {
+  top: 352%;
+ width: 105%;
+ left:-1%;
+ position: absolute;
+ z-index: -3;
+ opacity: 0.85;
+}
+
+.title-cover4 {
+  transform: rotate(180deg);
+  top: 573%;
+ width: 105%;
+ left:-1%;
+ position: absolute;
+ z-index: -3;
+ opacity: 0.85;
+}
+
+.title-cover5 {
+  transform: rotate(180deg);
+  top: 675%;
+ width: 105%;
+ left:-1%;
+ position: absolute;
+ z-index: -3;
+ opacity: 0.85;
+}
+
+.title-cover6 {
+  top: 859%;
+ width: 105%;
+ left:-1%;
+ position: absolute;
+ z-index: -3;
+ opacity: 0.85;
 }
 
 .third-container {
@@ -568,7 +625,9 @@ nav ul li.button {
     left: 0;
   }
 
-  /* QUAND JE CLIQUE SUR LUI JE VOIS MENU */
+  .title-cover, .title-cover2,  .title-cover3, .title-cover4 {
+display: none;
+  }
 
   /* MENU A DISPLAY */
 
@@ -649,7 +708,6 @@ nav ul li.button {
 
   .strong2 {
     line-height: 1;
-    animation: blink 2s linear infinite;
   }
 
   .strong {
@@ -657,7 +715,6 @@ nav ul li.button {
     color:white;
     text-shadow: 5px 5px 1px #233853;
     margin-top: -0.8em;
-    animation: blink 2s infinite;
   }
 
   .mockup2{
