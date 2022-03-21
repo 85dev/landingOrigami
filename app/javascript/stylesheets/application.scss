@@ -567,8 +567,6 @@ background: linear-gradient(90deg, rgba(255,203,0,1) 0%, rgba(243,191,95,1) 47%,
 @media only screen and (max-width: 600px){
   /*Tablets [601px -> 1200px]*/
   html, body {
-    max-width: 100%;
-    overflow: auto;
     overflow-x: hidden;
   }
 
