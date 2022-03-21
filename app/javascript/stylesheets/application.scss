@@ -12,7 +12,7 @@
 }
 
 body {
-  max-width: 101%;
+  max-width: 100%;
   background-color: rgb(255, 255, 255);
   color: white;
   margin: 0 auto;
@@ -406,6 +406,10 @@ nav ul li.button {
 }
 
 .between-container {
+  background: rgb(255,203,0);
+background: linear-gradient(90deg, rgba(255,203,0,1) 0%, rgba(243,191,95,1) 47%, rgba(255,89,127,1) 100%);
+  background-size: 100%;
+  background-repeat: no-repeat;
   margin-top: 2em;
   font-size: 1.3em;
   margin: 0 auto;
@@ -416,62 +420,6 @@ nav ul li.button {
 }
 
 // TITLE COVER //
-
-.title-cover {
-  top: 123%;
- width: 105%;
- left:-1%;
- position: absolute;
- z-index: -3;
- opacity: 0.85;
-}
-
-.title-cover2 {
-  top: 231%;
- width: 105%;
- left:-1%;
- position: absolute;
- z-index: -3;
- opacity: 0.85;
-}
-
-.title-cover3 {
-  top: 352%;
- width: 105%;
- left:-1%;
- position: absolute;
- z-index: -3;
- opacity: 0.85;
-}
-
-.title-cover4 {
-  transform: rotate(180deg);
-  top: 573%;
- width: 105%;
- left:-1%;
- position: absolute;
- z-index: -3;
- opacity: 0.85;
-}
-
-.title-cover5 {
-  transform: rotate(180deg);
-  top: 675%;
- width: 105%;
- left:-1%;
- position: absolute;
- z-index: -3;
- opacity: 0.85;
-}
-
-.title-cover6 {
-  top: 859%;
- width: 105%;
- left:-1%;
- position: absolute;
- z-index: -3;
- opacity: 0.85;
-}
 
 .third-container {
   margin-bottom: 2em;
@@ -549,6 +497,13 @@ nav ul li.button {
   background: linear-gradient(0.25turn, rgb(255, 187, 0), rgb(0, 255, 200), rgb(0, 162, 255));
 }
 
+.title-text {
+  text-shadow: 6px 6px 5px #000000; 
+  max-width: 90%;
+  font-size: 3.4em;
+    color:rgb(255, 255, 255);
+}
+
 .fifth-container {
   margin: 0 auto;
   display: flex;
@@ -586,6 +541,10 @@ nav ul li.button {
 
 .logo {
   margin-right: 3em;
+  &:hover { 
+    transform: scale(1.1);
+    transition-duration: 0.2s;
+  }
 }
 
 .content-text {
@@ -609,6 +568,7 @@ nav ul li.button {
   /*Tablets [601px -> 1200px]*/
   html, body {
     max-width: 100%;
+    overflow: auto;
     overflow-x: hidden;
   }
 
@@ -625,9 +585,10 @@ nav ul li.button {
     left: 0;
   }
 
-  .title-cover, .title-cover2,  .title-cover3, .title-cover4 {
-display: none;
+  .title-text {
+    font-size:2.4em;
   }
+
 
   /* MENU A DISPLAY */
 
