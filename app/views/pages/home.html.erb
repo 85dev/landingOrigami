@@ -108,8 +108,8 @@
 </p><br><br>
 
 <div class="between-container" style="margin-top: 2em; margin-bottom: 1em; margin-top: 3em;">
-    <h1 class="title-text" id="partieConcept"> A qui
-      s'adresse Origami ? 🤔 </h1>
+    <h1 class="title-text" id="partieConcept"> <span class="under-line">A qui
+      s'adresse Origami ? 🤔 </span></h1> 
   </div>
 
 
@@ -144,9 +144,9 @@
 
 <div class="between-container" style="margin-top: 2em; margin-bottom: 1em; margin-top: 3em;">
   <h2 
-      class="title-text">
+      class="title-text"> <span class="under-line">
     ... alors
-    Origami est fait pour vous ! </h2>
+    Origami est pour vous ! </span> </h2>
 </div>
 
 
@@ -176,7 +176,7 @@
       (dont vous), prêts
       à discuter et à vous
       rencontrer dans une même ville ! </li>
-    <li style="padding:0.5em;"><strong>Bonus : </strong> Un sympathique robot ('Combo' le Robot) vous aide à
+    <li style="padding:0.5em;"><strong>Bonus : </strong> 'Combo' le Robot vous aide à
       <strong> briser la
         glace </strong>
       lors
@@ -192,8 +192,8 @@
 </div>
 
 <div class="between-container">
-<p class="title-text">
-  Objectif final :
+<p class="title-text"><span class="under-line">
+  Objectif final : </span>
 </div>
 
 <div class="second-container" style="display: flex; max-width: 80%; margin: 0 auto; margin-top: -1em;">
@@ -232,7 +232,7 @@
 
 
 <div class="between-container">
-  <h2 id="Dev" class="title-text">Le développement de l'app</h2>
+  <h2 id="Dev" class="title-text"><span class="under-line">Le développement de l'app</span></h2>
 </div>
 <div class="content-text" style="">
   <div class="x3container" style="margin-top: 2em; margin-bottom: 1em">
@@ -279,9 +279,9 @@
 </div>
 
 <div class="between-container">
-  <h2 id="Vlogs" class="title-text">
+  <h2 class="title-text"><span class="under-line">
     Les Vlogs & la
-    Newsletter</h2>
+    Newsletter</span></h2>
 </div>
 
 <div class="content-text" style="margin-top: 1.5em;">
@@ -310,7 +310,7 @@
     !
   </li>
 </ol>
-<div class="random-container-yt">
+<div id="Vlogs" class="random-container-yt">
   <a href="https://www.youtube.com/channel/UC1ZpnwNF2hdMXw6Zibk9b8g/videos" target="_blank">
     <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_EAfMOs/Youtube.json"
                    background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay>
@@ -333,12 +333,12 @@
 </div>
 
 <div class="button-group" style="display: flex; justify-content: center; align-items:center; flex-direction: column; max-width: 80%; margin: 0 auto; margin-bottom: 2em;">
-  <p class="content-text">Pour une inscription rapide à la newsletter : </p>
+  <p class="content-text" id="Newsletter">Pour une inscription rapide à la newsletter : </p>
   <div class="newsletter-button first" style="text-decoration: none; color: white;"> Formulaire 'Newsletter'</div>
 </div>
 
  <%= form_with do |form| %>
-        <div class="form-group-news" id="Newsletter" style="padding: 1em;">
+        <div class="form-group-news" style="padding: 1em;">
           <h2 class="newsletter-button" style="font-family: 'Quantify'; font-size:1.6em;">Formulaire d'inscription à la Newsletter</h2>
 
             <%= form.label :query, "Email :", style:"margin-bottom: 0.2em;  margin-top: 0.6em;" %>
@@ -425,7 +425,7 @@
 
 
 <div class="between-container" style="margin-top: 1.5em; margin-bottom: 1.5em;">
-  <h2 id="Contact" class="title-text"> Derrière Origami...
+  <h2 id="Contact" class="title-text"> <span class="under-line"> Derrière Origami... </span>
   </h2>
 </div>
 
@@ -469,6 +469,6 @@
     <div class="footer-list" style="list-style-type: none; font-size:1.4em; font-family: 'Fredoka'; display: flex; justify-content: space-evenly; color: black; margin: 0 auto; margin-bottom: 2em; align-items: center;">
       <li style="display: flex; flex-direction:column; align-items: center;"><%= link_to image_tag('https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png', class: "footer-img", style: "width: 55px"), "https://www.youtube.com/channel/UC1ZpnwNF2hdMXw6Zibk9b8g" %> Origami sur YouTube</li>
       <li style="display: flex; flex-direction:column; align-items: center;"><%= link_to image_tag('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png', class: "footer-img", style: "width:55px"), "https://www.instagram.com/origamiapplication/" %> Origami sur Instagram</li>
-      <a href="#Vlogs" style="text-decoration: none; color: black;"><li style="display: flex; flex-direction:column; align-items: center;"><%= image_tag('https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg', class: "footer-img", style: "width:55px")%> Rejoindre notre newsletter</li></a>
+      <a href="#Newsletter" style="text-decoration: none; color: black;"><li style="display: flex; flex-direction:column; align-items: center;"><%= image_tag('https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg', class: "footer-img", style: "width:55px")%> Rejoindre notre newsletter</li></a>
     </div>s
 </div>

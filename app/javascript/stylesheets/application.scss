@@ -129,6 +129,7 @@ input.checkbox {
 }
 
 .form-group {
+  display:flex;
   max-width: 60%;
   background-color: #ffffff; 
   padding: 1em; 
@@ -552,7 +553,7 @@ transition: 0.2s;
   font-family: 'Quantify'; 
   max-width: fit-content;
   text-align: center;
-  font-size: 2.2em;
+  font-size: 2.4em;
 }
 
 .beta-button {
@@ -567,15 +568,21 @@ transition: 0.2s;
   font-family: 'Quantify';   
   max-width: fit-content;
   text-align: center;
-  font-size: 2.6em;
+  font-size: 2.4em;
 }
 
 .title-text {
-  text-shadow: 4px 4px 1px #79fff8; 
-  text-decoration: underline 2px #0e0e0e;
   max-width: 90%;
   font-size: 3.4em;
   color:#131313;
+}
+
+.under-line {
+    background-image: linear-gradient(to right, #ff85aa 0%, #f3f259 100%);
+    background-repeat: repeat-x; 
+    background-position: 0 100%; 
+    background-size: 100% 10px; 
+    border-radius: 15%;
 }
 
 .fifth-container {
