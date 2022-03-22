@@ -129,8 +129,8 @@ input.checkbox {
 }
 
 .form-group {
-  display: flex; 
-  max-width: 60%; 
+  max-width: 60%;
+  display: none;
   background-color: #ffffff; 
   padding: 1em; 
   font-size: 1.3em; 
@@ -146,6 +146,21 @@ input.checkbox {
 .form-group .submit:hover {
 transform: scale(1.1);
 transition: 0.2s;
+}
+
+.form-group-news {
+  max-width: 60%;
+  display: none;
+  background-color: #ffffff; 
+  padding: 1em; 
+  font-size: 1.3em; 
+  margin: 0 auto; 
+  justify-content: center; 
+  flex-direction: column; 
+  color: black; 
+  font-family: 'Fredoka';
+  box-shadow: 3px 3px 12px 2px rgb(236, 236, 236);
+  border-radius: 12px;
 }
 
 .strong3 {
@@ -521,7 +536,21 @@ nav ul li.button {
 }
 
 .newsletter-button:hover {
-transform:scale(1.2);
+transform:scale(1.1);
+transition: 0.2s;
+}
+
+.beta-button:hover {
+  transform:scale(1.1);
+  transition: 0.2s;
+  }
+
+.newsletter-button {
+  text-decoration: none; color: white; background-color:blue; padding-right:0.3em; padding-left: 0.3em; border-radius: 10px; box-shadow: 3px 3px 2px 2px #f1f1f1; font-family: 'Quantify'; font-size: 1.5em;
+}
+
+.beta-button {
+  text-decoration: none; color: white; background-color:blue; padding-right:0.3em; padding-left: 0.3em; border-radius: 10px; box-shadow: 3px 3px 2px 2px #f1f1f1; font-family: 'Quantify'; font-size: 1.5em;
 }
 
 .title-text {
@@ -614,6 +643,10 @@ transform:scale(1.2);
     font-size:2.4em;
   }
 
+  .button-group {
+    display: flex;
+    flex-direction: column;
+  }
 
   /* MENU A DISPLAY */
 
