@@ -206,6 +206,17 @@ transition: 0.2s;
   left: 0;
 }
 
+.footer {
+  margin-bottom: -1em;
+  background-image: url('../../assets/images/SVG/waves.svg');
+  background-position: center;
+  background-size: 100%;
+  font-family: "Fredoka";
+  font-size: 1.3em;
+  color: white;
+  font-weight: 300;
+}
+
 .footer-button {
   padding: 0.3em;
   border-radius: 8px;

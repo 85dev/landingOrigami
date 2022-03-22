@@ -2,7 +2,7 @@
 
 <nav>
   <ul style="color: white; font-family: 'Fredoka'">
-    <li class="logo"> <%= image_tag ('SVG/logoTW'), style:"width: 100px;" %></li>
+    <li id="logo" class="logo"> <%= image_tag ('SVG/logoTW'), style:"width: 100px;" %></li>
     <a href="#partieConcept" style="text-decoration: none; color: white">
       <li class="button"> l'App </li>
     </a>
@@ -10,7 +10,7 @@
       <li class="button"> le Développement </li>
     </a>
 
-    <a href="#Vlogs" style="text-decoration: none; color: white">
+    <a href="#V&N" style="text-decoration: none; color: white">
       <li class="button"> Vlogs & Newsletter </li>
     </a>
 
@@ -31,7 +31,7 @@
       <li class="button">💻 le Développement </li>
     </a>
 
-    <a href="#Vlogs" style="text-decoration: none; color: white">
+    <a href="#V&N" style="text-decoration: none; color: white">
       <li class="button">🗞️ Vlogs & Newsletter </li>
     </a>
 
@@ -279,7 +279,7 @@
 </div>
 
 <div class="between-container">
-  <h2 class="title-text"><span class="under-line">
+  <h2 class="title-text" id="V&N"><span class="under-line">
     Les Vlogs & la
     Newsletter</span></h2>
 </div>
@@ -465,10 +465,12 @@
   !
 </div>
 
-<div class="footer" style="margin-top: 3em; ">
-    <div class="footer-list" style="list-style-type: none; font-size:1.4em; font-family: 'Fredoka'; display: flex; justify-content: space-evenly; color: black; margin: 0 auto; margin-bottom: 2em; align-items: center;">
-      <li style="display: flex; flex-direction:column; align-items: center;"><%= link_to image_tag('https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png', class: "footer-img", style: "width: 55px"), "https://www.youtube.com/channel/UC1ZpnwNF2hdMXw6Zibk9b8g" %> Origami sur YouTube</li>
-      <li style="display: flex; flex-direction:column; align-items: center;"><%= link_to image_tag('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png', class: "footer-img", style: "width:55px"), "https://www.instagram.com/origamiapplication/" %> Origami sur Instagram</li>
-      <a href="#Newsletter" style="text-decoration: none; color: black;"><li style="display: flex; flex-direction:column; align-items: center;"><%= image_tag('https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg', class: "footer-img", style: "width:55px")%> Rejoindre notre newsletter</li></a>
-    </div>s
+<div class="footer" style="max-height: fit-content; margin-top: 2em; ">
+    <div class="footer-list" style="list-style-type: none; display: flex; justify-content: space-evenly; margin-left: 0.5em; margin: 0 auto; margin-bottom: 2em; align-items: flex-end;">
+      <a href="#logo" style="margin-top: 2em;text-decoration: none;"><li style="display: flex; flex-direction:column; align-items: center;"><%= image_tag('SVG/logoTW', class: "footer-img", style: "width:140px")%> </li></a>
+      <li style="margin-top: 2em; display: flex; flex-direction:column; align-items: center;"><%= link_to image_tag('https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png', class: "footer-img", style: "width: 55px"), "https://www.youtube.com/channel/UC1ZpnwNF2hdMXw6Zibk9b8g" %> Origami sur YouTube</li>
+      <li style="margin-top: 2em;display: flex; flex-direction:column; align-items: center;"><%= link_to image_tag('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png', class: "footer-img", style: "width:55px"), "https://www.instagram.com/origamiapplication/" %> Origami sur Instagram</li>
+      <a href="#Newsletter" style="margin-top: 2em;text-decoration: none; color:white;"><li style="display: flex; flex-direction:column; align-items: center;"><%= image_tag('https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg', class: "footer-img", style: "width:55px")%> Rejoindre notre newsletter</li></a>
+    </div>
+    <p style="text-align:center; margin-bottom:0.2em;">Origami 2022, tous droits réservés.</p>
 </div>
