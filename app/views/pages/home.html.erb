@@ -204,7 +204,7 @@
       conversation
       digitale à ... </p>
 
-    <p class="underlined-text" id="rencontre">
+    <p class="title-text" id="rencontre">
       <strong>une rencontre in real life !
       </strong>
     </p>
@@ -212,8 +212,7 @@
     <lottie-player src="https://assets1.lottiefiles.com/private_files/lf30_llpflzsi.json"
                    background="transparent" speed="1" style="max-width: 500px;" loop autoplay></lottie-player>
 
-    <p class="content-text" style="margin-bottom: 3em;"> Souscrivez à la <a href="#
-    " class="newsletter-button first">Newsletter</a>, aux réseaux sociaux et à la
+    <p class="content-text" style="margin-bottom: 3em;"> Souscrivez à la <a href="#Newsletter" class="newsletter-button first">Newsletter</a>, aux réseaux sociaux et à la
       chaîne YouTube pour rester
       informés
       !
@@ -273,6 +272,9 @@
     nous
     faisons une
     pause autour de la réflexion de Origami pour se consacrer à diverses missions free-lance.
+    <div style="display: flex; width: 100%; justify-content:center">
+    <%= image_tag 'img-origami1', style: "max-width:950px; margin-top: 1em;" %>
+    </div>
   </div>
 </div>
 
@@ -294,9 +296,9 @@
   parlerons
   notamment : </h2>
 <ol class="content-text" style="padding-left:1.7em;">
-  <li style="padding-top: 1em;"> 🤠 De l'entreprenariat, des problématiques marketing, de communication, de
+  <li style="padding-top: 1em;"> 🤠 De<strong> l'entreprenariat,</strong> des problématiques marketing, de communication, de
     tech, </li>
-  <li style="padding-top: 1em;"> 🖥️ De dev, de programmation, de code, </li>
+  <li style="padding-top: 1em;"> 🖥️ De dev, de <strong>programmation,</strong> de code, </li>
   <li style="padding-top: 1em;"> 🤣 Nous raconterons quelques <strong>petites blagues </strong> car nous
     sommes
     des
@@ -309,13 +311,13 @@
   </li>
 </ol>
 <div class="random-container-yt">
-  <a href="https://youtube.com/watch?v" target="_blank">
+  <a href="https://www.youtube.com/channel/UC1ZpnwNF2hdMXw6Zibk9b8g/videos" target="_blank">
     <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_EAfMOs/Youtube.json"
                    background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay>
     </lottie-player>
   </a>
 </div>
-<div class="content-text" style="margin-top: 2em; margin-bottom:2em;">
+<div class="content-text" style="margin-top: 2em; margin-bottom:0.5em;">
   En Mars 2022, nous entamons les préparatifs (charte
   graphique, logo, problématiques tech, machine learning, etc.) du
   développement de l'app pour entamer la conception en Avril 2022.<br></br>
@@ -330,11 +332,9 @@
   formulaire en cochant la case dédiée.
 </div>
 
-<div class="button-group" style="display: flex; justify-content: center; flex-direction: column; max-width: 80%; margin: 0 auto; margin-bottom: 2em;">
+<div class="button-group" style="display: flex; justify-content: center; align-items:center; flex-direction: column; max-width: 80%; margin: 0 auto; margin-bottom: 2em;">
   <p class="content-text">Pour une inscription rapide à la newsletter : </p>
   <div class="newsletter-button first" style="text-decoration: none; color: white;"> Formulaire 'Newsletter'</div>
-<p class="content-text">Pour s'engager plus loin dans l'aventure Origami : </p>
-  <div class="beta-button second" style="text-decoration: none; color: white;"> Formulaire 'S'engager' </div>
 </div>
 
  <%= form_with do |form| %>
@@ -363,8 +363,13 @@
         </div>
       <% end %>
 
+<div class="button-group" style="display: flex; justify-content: center; align-items:center; flex-direction: column; max-width: 80%; margin: 0 auto; margin-bottom: 2em;">
+<p class="content-text">Pour s'engager plus loin dans l'aventure Origami : </p>
+  <div class="beta-button second" style="text-decoration: none; color: white;"> Formulaire 'S'engager' </div>
+</div>
+
       <%= form_with do |form| %>
-        <div class="form-group" id="Newsletter" style="padding: 1em;">
+        <div class="form-group" id="BETA" style="padding: 1em;">
         <h2 class="newsletter-button" style="font-family: 'Quantify'; font-size:1.6em;">Formulaire d'engagement aux tests (version Bêta)</h2>
             <%= form.label :query, "Nom :", style:"margin-bottom: 0.2em;" %>
             <%= form.text_field :query, placeholder: "Michel", style: "font-family: 'Fredoka'; font-size: 0.95em;" %>
@@ -462,8 +467,8 @@
 
 <div class="footer" style="margin-top: 3em; ">
     <div class="footer-list" style="list-style-type: none; font-size:1.4em; font-family: 'Fredoka'; display: flex; justify-content: space-evenly; color: black; margin: 0 auto; margin-bottom: 2em; align-items: center;">
-      <li style="display: flex; flex-direction:column; align-items: center;"><%= link_to image_tag 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png', class: "footer-img" %> Origami sur YouTube</li>
-      <li style="display: flex; flex-direction:column; align-items: center;"><%= link_to image_tag 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png', class: "footer-img", style: "width:60px"%> Origami sur Instagram</li>
-      <li style="display: flex; flex-direction:column; align-items: center;"><%= link_to image_tag 'https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg', class: "footer-img", style: "width:58px"%> Rejoindre notre newsletter</li>
-    </div>
+      <li style="display: flex; flex-direction:column; align-items: center;"><%= link_to image_tag('https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png', class: "footer-img", style: "width: 55px"), "https://www.youtube.com/channel/UC1ZpnwNF2hdMXw6Zibk9b8g" %> Origami sur YouTube</li>
+      <li style="display: flex; flex-direction:column; align-items: center;"><%= link_to image_tag('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png', class: "footer-img", style: "width:55px"), "https://www.instagram.com/origamiapplication/" %> Origami sur Instagram</li>
+      <a href="#Vlogs" style="text-decoration: none; color: black;"><li style="display: flex; flex-direction:column; align-items: center;"><%= image_tag('https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg', class: "footer-img", style: "width:55px")%> Rejoindre notre newsletter</li></a>
+    </div>s
 </div>

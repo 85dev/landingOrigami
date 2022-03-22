@@ -130,7 +130,6 @@ input.checkbox {
 
 .form-group {
   max-width: 60%;
-  display: none;
   background-color: #ffffff; 
   padding: 1em; 
   font-size: 1.3em; 
@@ -150,7 +149,6 @@ transition: 0.2s;
 
 .form-group-news {
   max-width: 60%;
-  display: none;
   background-color: #ffffff; 
   padding: 1em; 
   font-size: 1.3em; 
@@ -444,11 +442,8 @@ nav ul li.button {
 }
 
 .between-container {
-  background: rgb(255,203,0);
-  background: linear-gradient(90deg, rgba(255,203,0,1) 0%, rgba(243,191,95,1) 47%, rgba(255,89,127,1) 100%);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  margin-top: 2em;
+  max-width: 80%;
+  margin-top: 3em;
   font-size: 1.3em;
   margin: 0 auto;
   display: flex;
@@ -548,26 +543,39 @@ transition: 0.2s;
 .newsletter-button.first{
   text-decoration: none; 
   color: white; 
-  background-color:blue; 
-  padding-right:0.3em; 
+  background-color:rgb(255, 153, 0); 
+  padding: 0.1em; 
+  padding-right: 0.3em; 
   padding-left: 0.3em; 
   border-radius: 10px; 
   box-shadow: 3px 3px 2px 2px #f1f1f1; 
   font-family: 'Quantify'; 
   max-width: fit-content;
-  font-size: 2.5em;
+  text-align: center;
+  font-size: 2.2em;
 }
 
 .beta-button {
-  text-decoration: none; color: white; background-color:blue; padding-right:0.3em; padding-left: 0.3em; border-radius: 10px; box-shadow: 3px 3px 2px 2px #f1f1f1; font-family: 'Quantify';   max-width: fit-content;
-  font-size: 2.5em;
+  text-decoration: none; 
+  color: white; 
+  background-color:rgb(255, 94, 0);
+  padding: 0.1em; 
+  padding-right: 0.3em; 
+  padding-left: 0.3em; 
+  border-radius: 10px; 
+  box-shadow: 3px 3px 2px 2px #f1f1f1; 
+  font-family: 'Quantify';   
+  max-width: fit-content;
+  text-align: center;
+  font-size: 2.6em;
 }
 
 .title-text {
-  text-shadow: 6px 6px 5px #000000; 
+  text-shadow: 4px 4px 1px #79fff8; 
+  text-decoration: underline 2px #0e0e0e;
   max-width: 90%;
   font-size: 3.4em;
-    color:rgb(255, 255, 255);
+  color:#131313;
 }
 
 .fifth-container {
@@ -898,6 +906,10 @@ transition: 0.2s;
 
   .astronomie {
     order: 4;
+  }
+
+  .newsletter-button.first{
+    font-size: 1.3em;
   }
 }
 
