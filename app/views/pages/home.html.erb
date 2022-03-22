@@ -49,7 +49,8 @@
     ">
       <p class="strong3">Rencontrez aujourd'hui
         vos
-        amis de demain.</p>
+        amis de </p>
+        <p class="strong3" style="margin-top:-0.8em; font-size: 1.5em;">demain.</p>
     </h1>
     <h1 class="desktop-text2"
         style="max-width:90%; margin: 0 auto; text-shadow: 5px 5px 1px #234547;">
@@ -74,6 +75,10 @@
 
 <div class="absolute-bg" style="position: absolute; top:-2%; min-width:103.3%; left:-1.1%;">
   <%= image_tag "SVG/linesFichier 46", class:"responsive-waves", style:"position:absolute; z-index:-4; top:0; " %>
+</div>
+
+<div class="absolute-bg" style="position: absolute; bottom:-990%; min-width:103.3%; left:-1.1%;">
+  <%= image_tag "SVG/randomWAVESFichier 71", style:"position:absolute; z-index:-4; bottom:0;" %>
 </div>
 
 <!-- APP EN DEVELOPPEMENT -->
@@ -211,7 +216,7 @@
     <lottie-player src="https://assets1.lottiefiles.com/private_files/lf30_llpflzsi.json"
                    background="transparent" speed="1" style="max-width: 500px;" loop autoplay></lottie-player>
 
-    <p class="content-text" style="margin-bottom: 3em;"> Souscrivez à la Newsletter, aux réseaux sociaux et à la
+    <p class="content-text" style="margin-bottom: 3em;"> Souscrivez à la <a href="#Newsletter" class="newsletter-button" style="text-decoration: none; color: white; background-color:blue; padding-right:0.3em; padding-left: 0.3em; border-radius: 10px; box-shadow: 3px 3px 2px 2px #f1f1f1; font-family: 'Quantify'; font-size: 1.5em;">Newsletter</a>, aux réseaux sociaux et à la
       chaîne YouTube pour rester
       informés
       !
@@ -219,59 +224,6 @@
 
   </div>
 </div>
-
-      <%= form_with do |form| %>
-        <div class="form-group" style="padding: 1em">
-            <%= form.label :query, "Nom :", style:"margin-bottom: 0.2em;" %>
-            <%= form.text_field :query, placeholder: "Michel", style: "font-family: 'Fredoka'; font-size: 0.95em;" %>
-
-            <%= form.label :query, "Prénom :", style:"margin-bottom: 0.2em; margin-top: 0.6em" %>
-            <%= form.text_field :query, placeholder: "Albertino", style: "font-family: 'Fredoka'; font-size: 0.95em;" %>
-
-            <%= form.label :query, "Âge :", style:"margin-bottom: 0.2em; margin-top: 0.6em;" %>
-            <%= form.text_field :query, placeholder: "18", style: "font-family: 'Fredoka'; font-size: 0.95em;"  %>
-
-            <%= form.label :query, "Email :", style:"margin-bottom: 0.2em;  margin-top: 0.6em;" %>
-            <%= form.text_field :query, placeholder: "michel@example.com", style: "font-family: 'Fredoka'; font-size: 0.95em;"  %>
-
-            <%= form.label :query, "Ville :", style:"margin-bottom: 0.2em;  margin-top: 0.6em;" %>
-            <%= form.text_field :query, placeholder: "Lyon", style: "font-family: 'Fredoka'; font-size: 0.95em;"  %>
-
-            <%= form.label :query, "Situation pro :", style:"margin-bottom: 0.2em;  margin-top: 0.6em;" %>
-            <%= form.text_field :query, placeholder: "Cadre, étudiant...", style: "font-family: 'Fredoka'; font-size: 0.95em;"  %>
-          
-
-            <div class="checkbox-container" style="margin-top:0.5em;">
-            <ul>
-                <%= form.label :query, "Je souhaite m'inscrire à la newsletter*", style:"font-weight: 400;" %>
-                <%= form.check_box :checkbox, class:"checkbox"%>
-            </ul>
-              </div>
-
-              <div class="text-betatest" style="display: inline-block; margin-top: -1em; font-style:italic; font-size: 0.9em; font-weight: 100;">
-                <ul>
-                <p>*J'accepte d'être contacté par email par l'organisation</p>
-                </ul>
-              </div>
-
-              <div class="checkbox-container">
-            <ul>
-                <%= form.label :query, "Je souhaite être bêta-testeur*", style:" font-weight: 400;"  %>
-                <%= form.check_box :checkbox, class:"checkbox" %>
-            </ul>
-              </div>
-
-              <div class="text-betatest" style="display: inline-block; margin-top: -1em; font-style:italic; font-size: 0.9em; font-weight: 100;">
-                <ul>
-                <p>*J'accepte d'être contacté par l'organisation afin de participer à des tests de l'application mobile</p>
-                </ul>
-              </div>
-
-            <div class="submit" style="margin-top: 1em; display: flex; justify-content: center">
-              <%= form.submit "Envoyer", class:"button-form" %>
-            </div>
-        </div>
-      <% end %>
 
 <div class="first-container">
   <h2 style="font-size: 1.8em;">Vous ne passerez plus un vendredi soir sans bonne compagnie.</h2>
@@ -381,6 +333,61 @@
   formulaire en cochant la case dédiée.
 </div>
 
+ <%= form_with do |form| %>
+        <div class="form-group" id="Newsletter" style="padding: 1em;">
+        <h2 style="font-family: 'Quantify'; font-size:1.6em;">Formulaire d'inscription à la Newsletter</h2>
+            <%= form.label :query, "Nom :", style:"margin-bottom: 0.2em;" %>
+            <%= form.text_field :query, placeholder: "Michel", style: "font-family: 'Fredoka'; font-size: 0.95em;" %>
+
+            <%= form.label :query, "Prénom :", style:"margin-bottom: 0.2em; margin-top: 0.6em" %>
+            <%= form.text_field :query, placeholder: "Albertino", style: "font-family: 'Fredoka'; font-size: 0.95em;" %>
+
+            <%= form.label :query, "Âge :", style:"margin-bottom: 0.2em; margin-top: 0.6em;" %>
+            <%= form.text_field :query, placeholder: "18", style: "font-family: 'Fredoka'; font-size: 0.95em;"  %>
+
+            <%= form.label :query, "Email :", style:"margin-bottom: 0.2em;  margin-top: 0.6em;" %>
+            <%= form.text_field :query, placeholder: "michel@example.com", style: "font-family: 'Fredoka'; font-size: 0.95em;"  %>
+
+            <%= form.label :query, "Ville :", style:"margin-bottom: 0.2em;  margin-top: 0.6em;" %>
+            <%= form.text_field :query, placeholder: "Lyon", style: "font-family: 'Fredoka'; font-size: 0.95em;"  %>
+
+            <%= form.label :query, "Situation pro :", style:"margin-bottom: 0.2em;  margin-top: 0.6em;" %>
+            <%= form.text_field :query, placeholder: "Cadre, étudiant...", style: "font-family: 'Fredoka'; font-size: 0.95em;"  %>
+          
+
+            <div class="checkbox-container" style="margin-top:0.5em;">
+            <ul>
+                <%= form.label :query, "Je souhaite m'inscrire à la newsletter*", style:"font-weight: 400;" %>
+                <%= form.check_box :checkbox, class:"checkbox"%>
+            </ul>
+              </div>
+
+              <div class="text-betatest" style="display: inline-block; margin-top: -1em; font-style:italic; font-size: 0.9em; font-weight: 100;">
+                <ul>
+                <p>*J'accepte d'être contacté par email par l'organisation</p>
+                </ul>
+              </div>
+
+              <div class="checkbox-container">
+            <ul>
+                <%= form.label :query, "Je souhaite être bêta-testeur*", style:" font-weight: 400;"  %>
+                <%= form.check_box :checkbox, class:"checkbox" %>
+            </ul>
+              </div>
+
+              <div class="text-betatest" style="display: inline-block; margin-top: -1em; font-style:italic; font-size: 0.9em; font-weight: 100;">
+                <ul>
+                <p>*J'accepte d'être contacté par l'organisation afin de participer à des tests de l'application mobile</p>
+                </ul>
+              </div>
+
+            <div class="submit" style="margin-top: 1em; display: flex; justify-content: center">
+              <%= form.submit "Envoyer", class:"button-form" %>
+            </div>
+        </div>
+      <% end %>
+
+
 
 <div class="between-container" style="margin-top: 1.5em; margin-bottom: 1.5em;">
   <h2 id="Contact" class="title-text"> Derrière Origami...
@@ -427,74 +434,11 @@
   </div>
 </div>
 
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="waves1"
-     x="0px" y="0px" viewBox="0 0 1300 350" xml:space="preserve">
-  <style type="text/css">
-      .st1 {
-        display:none;
-          opacity: 0.6;
-          fill: #0099ff;
-          enable-background: new;
-      }
-  </style>
+<div class="footer">
+    <div class="footer-list" style="margin-top: 1em; list-style-type: none; font-size:1.4em; font-family: 'Fredoka'; display: flex; justify-content: space-evenly; color: black; margin: 0 auto; margin-bottom: 2em; align-items: center;">
+      <%= link_to image_tag 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png', class: "footer-img" %>
+      <%= link_to image_tag 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png', class: "footer-img", style: "width:60px"%>
+      <%= link_to image_tag 'https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg', class: "footer-img", style: "width:58px"%>
+    </div>
+</div>
 
-  <path class="st1" d="M 0 250 C 600 450 650 100 1300 250 L 1300 550 L 0 550 L 0 250">
-    <animate attributeName="d" dur="5s" begin="1s" values="M 0 250 C 600 450 650 100 1300 250 L 1300 550 L 0 550 L 0 250;
-            M 0 250 C 600 100 650 450 1300 250 L 1300 550 L 0 550 L 0 250;
-            M 0 250 C 600 450 650 100 1300 250 L 1300 550 L 0 550 L 0 250" repeatCount="indefinite" />
-  </path>
-
-  <path class="st1" d="M 0 250 C 600 100 650 450 1300 250 L 1300 550 L 0 550 L 0 250">
-    <animate attributeName="d" dur="5s" values="M 0 250 C 600 100 650 450 1300 250 L 1300 550 L 0 550 L 0 250;
-            M 0 250 C 600 450 650 100 1300 250 L 1300 550 L 0 550 L 0 250;
-            M 0 250 C 600 100 650 450 1300 250 L 1300 550 L 0 550 L 0 250" repeatCount="indefinite" />
-  </path>
-
-  <path class="st1" d="M 0 250 C 950 350 950 150 1300 250 L 1300 550 L 0 550 L 0 250">
-    <animate attributeName="d" dur="5s" begin="2s" values="M 0 250 C 950 350 950 150 1300 250 L 1300 550 L 0 550 L 0 250;
-            M 0 250 C 350 150 350 350 1300 250 L 1300 550 L 0 550 L 0 250;
-            M 0 250 C 950 350 950 150 1300 250 L 1300 550 L 0 550 L 0 250" repeatCount="indefinite" />
-  </path>
-
-  <path class="st1" d="M 0 250 C 350 150 350 350 1300 250 L 1300 550 L 0 550 L 0 250">
-    <animate attributeName="d" dur="5s" values="M 0 250 C 350 150 350 350 1300 250 L 1300 550 L 0 550 L 0 250;
-            M 0 250 C 950 350 950 150 1300 250 L 1300 550 L 0 550 L 0 250;
-            M 0 250 C 350 150 350 350 1300 250 L 1300 550 L 0 550 L 0 250" repeatCount="indefinite" />
-  </path>
-</svg>
-
-
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="waves2"
-     x="0px" y="0px" viewBox="0 0 1300 350" xml:space="preserve">
-  <style type="text/css">
-      .st1 {
-          opacity: 0.6;
-          fill: #0099ff;
-          enable-background: new;
-      }
-  </style>
-
-  <path class="st1" d="M 0 250 C 600 450 650 100 1300 250 L 1300 550 L 0 550 L 0 250">
-    <animate attributeName="d" dur="5s" begin="1s" values="M 0 250 C 600 450 650 100 1300 250 L 1300 550 L 0 550 L 0 250;
-            M 0 250 C 600 100 650 450 1300 250 L 1300 550 L 0 550 L 0 250;
-            M 0 250 C 600 450 650 100 1300 250 L 1300 550 L 0 550 L 0 250" repeatCount="indefinite" />
-  </path>
-
-  <path class="st1" d="M 0 250 C 600 100 650 450 1300 250 L 1300 550 L 0 550 L 0 250">
-    <animate attributeName="d" dur="5s" values="M 0 250 C 600 100 650 450 1300 250 L 1300 550 L 0 550 L 0 250;
-            M 0 250 C 600 450 650 100 1300 250 L 1300 550 L 0 550 L 0 250;
-            M 0 250 C 600 100 650 450 1300 250 L 1300 550 L 0 550 L 0 250" repeatCount="indefinite" />
-  </path>
-
-  <path class="st1" d="M 0 250 C 950 350 950 150 1300 250 L 1300 550 L 0 550 L 0 250">
-    <animate attributeName="d" dur="5s" begin="2s" values="M 0 250 C 950 350 950 150 1300 250 L 1300 550 L 0 550 L 0 250;
-            M 0 250 C 350 150 350 350 1300 250 L 1300 550 L 0 550 L 0 250;
-            M 0 250 C 950 350 950 150 1300 250 L 1300 550 L 0 550 L 0 250" repeatCount="indefinite" />
-  </path>
-
-  <path class="st1" d="M 0 250 C 350 150 350 350 1300 250 L 1300 550 L 0 550 L 0 250">
-    <animate attributeName="d" dur="5s" values="M 0 250 C 350 150 350 350 1300 250 L 1300 550 L 0 550 L 0 250;
-            M 0 250 C 950 350 950 150 1300 250 L 1300 550 L 0 550 L 0 250;
-            M 0 250 C 350 150 350 350 1300 250 L 1300 550 L 0 550 L 0 250" repeatCount="indefinite" />
-  </path>
-</svg>
