@@ -358,7 +358,9 @@ nav ul li.button {
 }
 
 .random-container-yt {
-  max-width: 70%;
+  width: 70%;
+  height: 500px;
+  min-height: fit-content;
   margin-top: 3em;
   display: flex;
   justify-content: center;
@@ -367,7 +369,7 @@ nav ul li.button {
   box-shadow: 5px 5px 20px 1px #dadada;
   background-image: url('../../assets/images/vlog-miniature.png');
   object-fit: contain;
-  background-size: 50%;
+  background-size: 90%;
   background-repeat: no-repeat;
   background-position-y: center;
   background-position-x: center;
