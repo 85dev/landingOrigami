@@ -213,7 +213,7 @@
                    background="transparent" speed="1" style="max-width: 500px;" loop autoplay></lottie-player>
 
     <p class="content-text" style="margin-bottom: 3em;"> Souscrivez à la <a href="#
-    " class="newsletter-button">Newsletter</a>, aux réseaux sociaux et à la
+    " class="newsletter-button first">Newsletter</a>, aux réseaux sociaux et à la
       chaîne YouTube pour rester
       informés
       !
@@ -330,10 +330,11 @@
   formulaire en cochant la case dédiée.
 </div>
 
-<div class="button-group" style="display: flex; justify-content: space-evenly; max-width: 60%; margin: 0 auto; margin-bottom: 2em;">
-  <div class="newsletter-button first" style="text-decoration: none; color: white; font-size:1.8em;"> Newsletter </div>
-  <div class="beta-button second" style="text-decoration: none; color: white; font-size:1.8em;"> S'engager </div>
-  </div>
+<div class="button-group" style="display: flex; justify-content: center; flex-direction: column; max-width: 80%; margin: 0 auto; margin-bottom: 2em;">
+  <p class="content-text">Pour une inscription rapide à la newsletter : </p>
+  <div class="newsletter-button first" style="text-decoration: none; color: white;"> Formulaire 'Newsletter'</div>
+<p class="content-text">Pour s'engager plus loin dans l'aventure Origami : </p>
+  <div class="beta-button second" style="text-decoration: none; color: white;"> Formulaire 'S'engager' </div>
 </div>
 
  <%= form_with do |form| %>

@@ -545,12 +545,22 @@ transition: 0.2s;
   transition: 0.2s;
   }
 
-.newsletter-button {
-  text-decoration: none; color: white; background-color:blue; padding-right:0.3em; padding-left: 0.3em; border-radius: 10px; box-shadow: 3px 3px 2px 2px #f1f1f1; font-family: 'Quantify'; font-size: 1.5em;
+.newsletter-button.first{
+  text-decoration: none; 
+  color: white; 
+  background-color:blue; 
+  padding-right:0.3em; 
+  padding-left: 0.3em; 
+  border-radius: 10px; 
+  box-shadow: 3px 3px 2px 2px #f1f1f1; 
+  font-family: 'Quantify'; 
+  max-width: fit-content;
+  font-size: 2.5em;
 }
 
 .beta-button {
-  text-decoration: none; color: white; background-color:blue; padding-right:0.3em; padding-left: 0.3em; border-radius: 10px; box-shadow: 3px 3px 2px 2px #f1f1f1; font-family: 'Quantify'; font-size: 1.5em;
+  text-decoration: none; color: white; background-color:blue; padding-right:0.3em; padding-left: 0.3em; border-radius: 10px; box-shadow: 3px 3px 2px 2px #f1f1f1; font-family: 'Quantify';   max-width: fit-content;
+  font-size: 2.5em;
 }
 
 .title-text {
