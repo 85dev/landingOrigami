@@ -393,23 +393,8 @@ s
 
             <%= form.label :query, "Situation pro :", style:"margin-bottom: 0.2em;  margin-top: 0.6em;" %>
             <%= form.text_field :query, placeholder: "Cadre, étudiant...", style: "font-family: 'Fredoka'; font-size: 0.95em;"  %>
-          
 
-            <div class="checkbox-container" style="margin-top:0.5em;">
-            <ul>
-                <%= form.label :query, "Je souhaite m'inscrire à la newsletter**", style:"font-weight: 400;" %>
-                <%= form.check_box :checkbox, class:"checkbox"%>
-            </ul>
-              </div>
-
-              <div class="text-betatest" style="display: inline-block; margin-top: -1em; font-style:italic; font-size: 0.9em; font-weight: 100;">
-                <ul>
-                <p>*J'accepte d'être contacté par email par l'organisation</p>
-                <p>*L'inscription à la newsletter est obligatoire pour l'engagement aux tests bêta</p>
-                </ul>
-              </div>
-
-              <div class="checkbox-container">
+              <div class="checkbox-container" style="margin-top: 0.2em;">
             <ul>
                 <%= form.label :query, "Je souhaite être bêta-testeur*", style:" font-weight: 400;"  %>
                 <%= form.check_box :checkbox, class:"checkbox" %>
@@ -418,7 +403,7 @@ s
 
               <div class="text-betatest" style="display: inline-block; margin-top: -1em; font-style:italic; font-size: 0.9em; font-weight: 100;">
                 <ul>
-                <p>*J'accepte d'être contacté par l'organisation afin de participer à des tests de l'application mobile</p>
+                <p>*J'accepte d'être contacté par l'organisation afin de participer à des tests de l'application mobile, je m'inscris également à la newsletter.</p>
                 </ul>
               </div>
 
