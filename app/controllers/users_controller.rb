@@ -5,6 +5,11 @@ class UsersController < ApplicationController
     redirect_to root_path
   end
 
+  def create_helper
+    @user = User.new(user_params)
+    # User
+  end
+
   private
 
   def user_params
