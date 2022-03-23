@@ -344,7 +344,7 @@ s
 
  <%= form_with do |form| %>
         <div class="form-group-news" style="padding: 1em;">
-          <h2  class="title-text" style="font-family: 'Quantify'; font-size:1.6em;">Formulaire d'inscription à la Newsletter</h2>
+          <h2  class="title-text" id="Formulaire" style="font-size:1.6em;">Formulaire d'inscription à la Newsletter</h2>
 
             <%= form.label :query, "Email :", style:"margin-bottom: 0.2em;  margin-top: 0.6em;" %>
             <%= form.text_field :query, placeholder: "michel@example.com", style: "font-family: 'Fredoka'; font-size: 0.95em;"  %>
@@ -375,7 +375,7 @@ s
 
       <%= form_with do |form| %>
         <div class="form-group" id="BETA" style="padding: 1em;">
-        <h2 class="title-text" style="font-family: 'Quantify'; font-size:1.6em;">Formulaire d'inscription aux tests (version Bêta)</h2>
+        <h2 class="title-text" style="font-size:1.6em;">Formulaire d'inscription aux tests (version Bêta)</h2>
             <%= form.label :query, "Nom :", style:"margin-bottom: 0.2em;" %>
             <%= form.text_field :query, placeholder: "Michel", style: "font-family: 'Fredoka'; font-size: 0.95em;" %>
 
@@ -471,12 +471,13 @@ s
 </div>
 
 <div class="footer" style="max-height: fit-content; margin-top: 2em; ">
-    <div class="footer-list" style="color:white;">
+    <div class="footer-list" style="color:white; font-weight:400">
       <a href="#logo" style="margin-top: 2em;text-decoration: none;"><li style="display: flex; flex-direction:column; align-items: center;"><%= image_tag('SVG/logoTW', class: "footer-img", style: "width:120px")%> </li></a>
-      <li style="margin-top: 2em; display: flex; flex-direction:column; align-items: center;"><%= link_to image_tag('https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png', class: "footer-img", style: "width: 55px"), "https://www.youtube.com/channel/UC1ZpnwNF2hdMXw6Zibk9b8g" %> YouTube</li>
-      <li style="margin-top: 2em;display: flex; flex-direction:column; align-items: center;"><%= link_to image_tag('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png', class: "footer-img", style: "width:55px"), "https://www.instagram.com/origamiapplication/" %> Instagram</li>
-      <a href="#Newsletter" style="margin-top: 2em;text-decoration: none; color: white;"><li style="display: flex; flex-direction:column; align-items: center;"><%= image_tag('https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg', class: "footer-img", style: "width:55px; color:white")%> La newsletter</li></a>
-      <li style="margin-top: 2em;display: flex; flex-direction:column; align-items: center;"><%= link_to image_tag('https://upload.wikimedia.org/wikipedia/commons/b/b4/Lydia_%28Paiement_sur_Internet%29.png', class: "footer-img", style: "width:105px"), "https://lydia-app.com/collect/7799-orig-ami/fr" %> Nous soutenir </li>
+      <li style="margin-top: 2em; display: flex; flex-direction:column; align-items: center;"><%= link_to image_tag('https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/YouTube_social_white_squircle.svg/1200px-YouTube_social_white_squircle.svg.png', class: "footer-img", style: "width: 50px"), "https://www.youtube.com/channel/UC1ZpnwNF2hdMXw6Zibk9b8g" %> YouTube</li>
+      <li style="margin-top: 2em;display: flex; flex-direction:column; align-items: center;"><%= link_to image_tag('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png', class: "footer-img", style: "width:50px"), "https://www.instagram.com/origamiapplication/" %> Instagram</li>
+      <a href="#Newsletter" style="margin-top: 2em;text-decoration: none; color: white;"><li style="display: flex; flex-direction:column; align-items: center;"><%= image_tag('https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg', class: "footer-img", style: "width:50px; color:white")%> La newsletter</li></a>
+      <li style="margin-top: 2em;display: flex; flex-direction:column; align-items: center;"><%= link_to image_tag('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Facebook_F_icon.svg/2048px-Facebook_F_icon.svg.png', class: "footer-img", style: "width:50px; border-radius: 5px;"), "https://www.facebook.com/origamiapplication/" %> Facebook </li>
+      <li style="margin-top: 2em;display: flex; flex-direction:column; align-items: center;"><%= link_to image_tag('https://files.helpdocs.io/zqc32mkmew/other/1608127986258/ideogram.png?t=1608127986258', class: "footer-img", style: "width:50px"), "https://lydia-app.com/collect/7799-orig-ami/fr" %> Nous soutenir </li>
     </div>
     <p class="backyard" style="text-align:center; margin-bottom:0.2em;">Origami 2022, tous droits réservés.</p>
 </div>
