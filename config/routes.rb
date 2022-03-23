@@ -7,5 +7,4 @@ Rails.application.routes.draw do
   post '/subscribe_helper', to: 'users#create_helper', as: :subscribe_helper
 
   root to: 'pages#home'
-  get '/tester', to: 'pages#tester'
 end
