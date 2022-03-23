@@ -387,7 +387,6 @@ nav ul li.button {
   display: block;
 }
 
-
 .random-container-yt {
   max-width: 70%;
   height: 500px;
@@ -711,10 +710,14 @@ transition: 0.2s;
 /* RESPONSIVE */
 
 
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 800px){
   /*Tablets [601px -> 1200px]*/
   html, body {
     overflow-x: hidden;
+  }
+
+  .card {
+    font-size: 0.9em;
   }
 
   a.global-reminder {
@@ -1026,6 +1029,10 @@ transition: 0.2s;
     overflow-x: hidden;
   }
 
+  .card {
+    font-size: 0.65em;
+  }
+
   h1, h2, h3, h4 {
     letter-spacing: -1px;
   }
@@ -1062,7 +1069,7 @@ transition: 0.2s;
     max-width: 290px;;
     min-width: 250px;
     order: 1;
-    margin-top: 4.5em;
+    margin-top: 6.5em;
     margin-left:0.5em;
     opacity: 1;
   }
