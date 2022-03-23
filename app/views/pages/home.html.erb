@@ -110,7 +110,7 @@ s
 
 <div class="between-container" style="margin-bottom: 1em; margin-top: 2em;">
     <h1 class="title-text" id="partieConcept"> <span class="under-line">A qui
-      s'adresse Origami ? 🤔 </span></h1> 
+      s'adresse Origami ? 🤔 </span></h1>
   </div>
 
 <div class="third-container">
@@ -143,7 +143,7 @@ s
 </div>
 
 <div class="between-container" style="margin-bottom: 1em; margin-top: 1em;">
-  <h2 
+  <h2
       class="title-text"> <span class="under-line">
     ... alors
     Origami est pour vous ! </span> </h2>
@@ -342,28 +342,15 @@ s
   <div class="newsletter-button first" style="text-decoration: none; color: white;"> Formulaire 'Newsletter'</div>
 </div>
 
- <%= form_with do |form| %>
+ <%= form_for @user, url: { controller: 'users', action: 'create' }, remote: true do |form| %>
         <div class="form-group-news" style="padding: 1em;">
           <h2  class="title-text" id="Formulaire" style="font-size:1.6em;">Formulaire d'inscription à la Newsletter</h2>
 
-            <%= form.label :query, "Email :", style:"margin-bottom: 0.2em;  margin-top: 0.6em;" %>
-            <%= form.text_field :query, placeholder: "michel@example.com", style: "font-family: 'Fredoka'; font-size: 0.95em;"  %>
-          
-            <div class="checkbox-container" style="margin-top:0.5em;">
-            <ul>
-                <%= form.label :query, "Je souhaite m'inscrire à la newsletter*", style:"font-weight: 400;" %>
-                <%= form.check_box :checkbox, class:"checkbox"%>
-            </ul>
-              </div>
-
-              <div class="text-betatest" style="display: inline-block; margin-top: -1em; font-style:italic; font-size: 0.9em; font-weight: 100;">
-                <ul>
-                <p>*J'accepte d'être contacté par email par l'organisation</p>
-                </ul>
-              </div>
+            <%= form.label :email, "Email :", style:"margin-bottom: 0.2em;  margin-top: 0.6em;" %>
+            <%= form.text_field :email, placeholder: "michel@example.com", style: "font-family: 'Fredoka'; font-size: 0.95em;"  %>
 
             <div class="submit" style="margin-top: 1em; display: flex; justify-content: center">
-              <%= form.submit "Envoyer", class:"button-form" %>
+              <%= form.submit "S'inscrire à la newsletter", class:"button-form" %>
             </div>
         </div>
       <% end %>
