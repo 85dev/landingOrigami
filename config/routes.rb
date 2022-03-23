@@ -8,4 +8,5 @@ Rails.application.routes.draw do
 
   root to: 'pages#home'
   get '/tester', to: 'pages#tester'
+  get '/unsubscribe', to: 'pages#unsubscribe'
 end
