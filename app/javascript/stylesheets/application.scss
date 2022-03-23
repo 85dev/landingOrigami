@@ -750,7 +750,9 @@ transition: 0.2s;
   animation: shake 3s infinite cubic-bezier(.36,.07,.19,.97) both;
 }
 
-
+.display-none {
+  display: none;
+}
 /* RESPONSIVE */
 
 

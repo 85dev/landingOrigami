@@ -338,10 +338,10 @@ s
 </div>
 
 <div class="button-group" style="display: flex; justify-content: center; align-items:center; flex-direction: column; max-width: 80%; margin: 0 auto; margin-bottom: 2em;">
-  <p class="content-text" style="font-size: 2.6em; font-weight: 100;" id="Newsletter">Pour s'inscrire à la newsletter : </p>
   <div class="newsletter-button first" style="text-decoration: none; color: white;"> Formulaire 'Newsletter'</div>
 </div>
-
+<div data-controller="form">
+<div data-form-target="form">
  <%= form_for @user, url: { controller: 'users', action: 'create' }, remote: true do |form| %>
         <div class="form-group-news" style="padding: 1em;">
           <h2  class="title-text" id="Formulaire" style="font-size:1.6em;">Formulaire d'inscription à la Newsletter</h2>
@@ -354,12 +354,12 @@ s
             </div>
         </div>
       <% end %>
-
-<div class="button-group" style="display: flex; justify-content: center; align-items:center; flex-direction: column; max-width: 80%; margin: 0 auto; margin-bottom: 2em;">
-<p class="content-text" style="font-size: 2.6em; font-weight: 100;"> Pour participer à l'aventure Origami : </p>
-  <div class="beta-button second" style="text-decoration: none; color: white;"> Formulaire 'Participer' </div>
+      <div id="alert"></div>
 </div>
-
+  <div class="button-group" style="display: flex; justify-content: center; align-items:center; flex-direction: column; max-width: 80%; margin: 0 auto; margin-top: 2em; margin-bottom: 2em;">
+    <div class="beta-button second" style="text-decoration: none; color: white; cursor: pointer;" data-form-target="text" data-action="click->form#openHelperForm"> Formulaire 'Participer' ↓ </div>
+  </div>
+  <div data-form-target="formHelper" class="display-none">
       <%= form_with do |form| %>
         <div class="form-group" id="BETA" style="padding: 1em;">
         <h2 class="title-text" style="font-size:1.6em;">Formulaire d'inscription aux tests (version Bêta)</h2>
@@ -399,8 +399,8 @@ s
             </div>
         </div>
       <% end %>
-
-
+  </div>
+</div>
 <div class="between-container" style="margin-top: 1.5em; margin-bottom: 1.5em;">
   <h2 id="Contact" class="title-text"> <span class="under-line"> Derrière Origami... </span>
   </h2>

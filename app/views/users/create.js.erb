@@ -1,0 +1,5 @@
+<% if @user.valid? %>
+      document.getElementById('alert').innerHTML = '<%= j render 'alerts/success' %>'
+<% else %>
+      document.getElementById('alert').innerHTML = '<%= j render 'alerts/fail' %>'
+<% end %>
