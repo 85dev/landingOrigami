@@ -31,6 +31,14 @@ body {
   transition: 0.3s;
 }
 
+.btn-form{
+  font-size: 1.2em;
+  font-family: 'Quantify'; 
+  color: white; 
+  background-color:red; 
+  border-radius: 5px;
+}
+
 .btn-gradient {
   color: white;
   padding: 8px 24px;
@@ -764,6 +772,10 @@ transition: 0.2s;
 
   .card {
     font-size: 0.9em;
+  }
+
+  .btn-form{
+    font-size: 1em;
   }
 
   a.global-reminder {
