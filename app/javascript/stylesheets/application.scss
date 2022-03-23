@@ -658,6 +658,11 @@ transition: 0.2s;
   display: none;
 }
 
+.spinning-mockup {
+  animation: MoveUpDown 3s linear infinite;
+  animation: shake 3s infinite cubic-bezier(.36,.07,.19,.97) both;
+}
+
 .footer-list {
   list-style-type: none; 
   display: flex; 
@@ -668,10 +673,19 @@ transition: 0.2s;
   align-items: flex-end;
 }
 
+.absolute-bg-inside {
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+  /* Fallback */
+  background-image: url('../../assets/images/SVG/desktopWAVESfinalFichier\ 75.svg');
+}
+
+
 /* RESPONSIVE */
 
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 700px){
   /*Tablets [601px -> 1200px]*/
   html, body {
     overflow-x: hidden;

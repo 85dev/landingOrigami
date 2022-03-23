@@ -101,13 +101,13 @@
 <!-- CONTENT 1 -->
 
 
-<p class="content-text"> Bonjour à tous, vous qui nous lisez ! Nous sommes <strong>Clément </strong>et
+<p class="content-text" style="color: black; text-align:center"><strong> Bonjour à tous, </strong> vous qui nous lisez ! <br><br> Nous sommes <strong>Clément </strong>et
   <strong>Nicolas</strong>, deux
   développeurs passionés par la tech, le design et l'entreprenariat.
   Avant de parler d'autre chose, laissez-nous vous présenter Origami...
 </p><br><br>
 
-<div class="between-container" style="margin-top: 2em; margin-bottom: 1em; margin-top: 3em;">
+<div class="between-container" style="margin-bottom: 1em; margin-top: 2em;">
     <h1 class="title-text" id="partieConcept"> <span class="under-line">A qui
       s'adresse Origami ? 🤔 </span></h1> 
   </div>
@@ -142,7 +142,7 @@
   </ul>
 </div>
 
-<div class="between-container" style="margin-top: 2em; margin-bottom: 1em; margin-top: 3em;">
+<div class="between-container" style="margin-bottom: 1em; margin-top: 1em;">
   <h2 
       class="title-text"> <span class="under-line">
     ... alors
@@ -189,7 +189,10 @@
     </strong>liés aux
       centres d'intérêt du groupe !</li>
   </ul>
+  <%= image_tag 'mockup_origami', style: "width: 180px;", class: "spinning-mockup" %>
 </div>
+
+      <a href="#Newsletter" style="display: flex; text-decoration: none; flex-direction:column; margin-top: 1em; align-items: center; color: black; font-weight: 100; font-size: 1.8em; font-family: 'Fredoka'"><li style="display: flex; flex-direction:column; align-items: center;"><%= image_tag('https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg', class: "footer-img", style: "width:80px; color:white")%> S'inscrire à la newsletter pour rester informé ! </li></a>
 
 <div class="between-container">
 <p class="title-text"><span class="under-line">
@@ -220,6 +223,8 @@
 
   </div>
 </div>
+
+      <li style="display: flex; flex-direction:column; align-items: center; color: black; font-weight: 100; font-size: 1.8em; font-family: 'Fredoka'"><%= link_to image_tag('https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png', class: "footer-img", style: "width: 80px"), "https://www.youtube.com/channel/UC1ZpnwNF2hdMXw6Zibk9b8g" %> Rejoindre l'aventure sur YouTube ! </li>
 
 <div class="first-container">
   <h2 style="font-size: 1.8em;">Vous ne passerez plus un vendredi soir sans bonne compagnie.</h2>
@@ -277,6 +282,7 @@
     </div>
     <p>L'idée a bien grandi depuis et notre réflexion a mûri, le temps nécessaire pour réfléchir aux <strong>technologies</strong> (les stacks, en langage IT) à utiliser. Au-delà des technologies, nous avons également réfléchi aux façons dont nous pourrions <strong>communiquer</strong> autour du projet. Nous avons retenu quelques inspirations... </p>
   </div>
+        <li style="margin-top: 2em;display: flex; flex-direction:column; align-items: center; font-weight: 100;"><%= link_to image_tag('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png', class: "footer-img", style: "width:80px"), "https://www.instagram.com/origamiapplication/" %> Suivre l'aventure sur Instagram ! </li>
 </div>
 
 <div class="between-container">
@@ -332,13 +338,13 @@
 </div>
 
 <div class="button-group" style="display: flex; justify-content: center; align-items:center; flex-direction: column; max-width: 80%; margin: 0 auto; margin-bottom: 2em;">
-  <p class="content-text" id="Newsletter">Pour une inscription rapide à la newsletter : </p>
+  <p class="content-text" style="font-size: 2.6em; font-weight: 100;" id="Newsletter">Pour s'inscrire à la newsletter : </p>
   <div class="newsletter-button first" style="text-decoration: none; color: white;"> Formulaire 'Newsletter'</div>
 </div>
 
  <%= form_with do |form| %>
         <div class="form-group-news" style="padding: 1em;">
-          <h2 class="newsletter-button" style="font-family: 'Quantify'; font-size:1.6em;">Formulaire d'inscription à la Newsletter</h2>
+          <h2  class="title-text" style="font-family: 'Quantify'; font-size:1.6em;">Formulaire d'inscription à la Newsletter</h2>
 
             <%= form.label :query, "Email :", style:"margin-bottom: 0.2em;  margin-top: 0.6em;" %>
             <%= form.text_field :query, placeholder: "michel@example.com", style: "font-family: 'Fredoka'; font-size: 0.95em;"  %>
@@ -363,13 +369,13 @@
       <% end %>
 
 <div class="button-group" style="display: flex; justify-content: center; align-items:center; flex-direction: column; max-width: 80%; margin: 0 auto; margin-bottom: 2em;">
-<p class="content-text">Pour participer avec nous à l'aventure Origami : </p>
+<p class="content-text" style="font-size: 2.6em; font-weight: 100;"> Pour participer à l'aventure Origami : </p>
   <div class="beta-button second" style="text-decoration: none; color: white;"> Formulaire 'Participer' </div>
 </div>
 
       <%= form_with do |form| %>
         <div class="form-group" id="BETA" style="padding: 1em;">
-        <h2 class="newsletter-button" style="font-family: 'Quantify'; font-size:1.6em;">Formulaire d'inscription aux tests (version Bêta)</h2>
+        <h2 class="title-text" style="font-family: 'Quantify'; font-size:1.6em;">Formulaire d'inscription aux tests (version Bêta)</h2>
             <%= form.label :query, "Nom :", style:"margin-bottom: 0.2em;" %>
             <%= form.text_field :query, placeholder: "Michel", style: "font-family: 'Fredoka'; font-size: 0.95em;" %>
 
