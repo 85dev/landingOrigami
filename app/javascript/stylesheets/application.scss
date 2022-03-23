@@ -685,12 +685,9 @@ transition: 0.2s;
   align-items: flex-end;
 }
 
-.absolute-bg-inside {
-  background-position: 0 0;
-  background-repeat: no-repeat;
-
-  /* Fallback */
-  background-image: url('../../assets/images/SVG/desktopWAVESfinalFichier\ 75.svg');
+.youtube-img {
+  max-width: 150px;
+  animation: shake 3s infinite cubic-bezier(.36,.07,.19,.97) both;
 }
 
 
@@ -713,6 +710,16 @@ transition: 0.2s;
   /* FULL NAV */
   .random-container-yt {
     height: 300px;
+    max-width: 60%;
+    background-size: 110%;
+  }
+
+  .youtube-img {
+    max-width: 100px;
+  }
+  
+  .backyard {
+    color: black;
   }
 
   .responsive-nav {
@@ -740,7 +747,6 @@ transition: 0.2s;
     background-size: 100%;
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,216,65,1) 6%, rgba(255,143,189,1) 94%, rgba(255,255,255,1) 100%);
-    margin-bottom: -0.4em;
   }
 
   /* MENU A DISPLAY */
