@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap");
+
 @font-face {
+  src: url("fonts/transfonter.org-20220317-110815/Quantify.eot") format("eot");
+  src: url("fonts/transfonter.org-20220317-110815/Quantify.svg") format("svg");
+  src: url("fonts/transfonter.org-20220317-110815/Quantify.woff") format("woff");
   font-family: 'Quantify';
-  src: url("../../../app/assets/fonts/transfonter.org-20220317-110815/Quantify.eot") format("eot");
-  src: url("../../../app/assets/fonts/transfonter.org-20220317-110815/Quantify.svg") format("svg");
-  src: url("../../../app/assets/fonts/transfonter.org-20220317-110815/Quantify.woff") format("woff");
   font-family: 'Quicksand', sans-serif;
   font-family: 'Anton', sans-serif;
   font-family: 'Fredoka', sans-serif;
@@ -87,34 +89,34 @@ body {
 }
 
 @keyframes blink {
-  0% { 
-    color: rgb(255, 255, 255); 
+  0% {
+    color: rgb(255, 255, 255);
   }
-  5% { 
-    color: rgb(255, 0, 106); 
+  5% {
+    color: rgb(255, 0, 106);
     transform: scale(1.02);
   }
-  10% { 
-    color: rgb(255, 255, 255); 
+  10% {
+    color: rgb(255, 255, 255);
     transform: scale(1.0);
   }
-  44% { 
-    color: rgb(255, 255, 255); 
+  44% {
+    color: rgb(255, 255, 255);
   }
-  50% { 
-    color: rgb(255, 0, 106); 
+  50% {
+    color: rgb(255, 0, 106);
   }
-  56% { 
-    color: rgb(255, 255, 255); 
+  56% {
+    color: rgb(255, 255, 255);
   }
-  84% { 
-    color: rgb(255, 255, 255); 
+  84% {
+    color: rgb(255, 255, 255);
   }
-  90% { 
-    color: rgb(255, 0, 106); 
+  90% {
+    color: rgb(255, 0, 106);
   }
-  96% { 
-    color: rgb(255, 255, 255); 
+  96% {
+    color: rgb(255, 255, 255);
   }
 }
 
@@ -146,13 +148,13 @@ input.checkbox {
 .form-group {
   display:flex;
   max-width: 60%;
-  background-color: #ffffff; 
-  padding: 1em; 
-  font-size: 1.3em; 
-  margin: 0 auto; 
-  justify-content: center; 
-  flex-direction: column; 
-  color: black; 
+  background-color: #ffffff;
+  padding: 1em;
+  font-size: 1.3em;
+  margin: 0 auto;
+  justify-content: center;
+  flex-direction: column;
+  color: black;
   font-family: 'Fredoka';
   box-shadow: 3px 3px 12px 2px rgb(236, 236, 236);
   border-radius: 12px;
@@ -181,13 +183,13 @@ transition: 0.2s;
 
 .form-group-news {
   max-width: 60%;
-  background-color: #ffffff; 
-  padding: 1em; 
-  font-size: 1.3em; 
-  margin: 0 auto; 
-  justify-content: center; 
-  flex-direction: column; 
-  color: black; 
+  background-color: #ffffff;
+  padding: 1em;
+  font-size: 1.3em;
+  margin: 0 auto;
+  justify-content: center;
+  flex-direction: column;
+  color: black;
   font-family: 'Fredoka';
   box-shadow: 3px 3px 12px 2px rgb(236, 236, 236);
   border-radius: 12px;
@@ -585,30 +587,30 @@ transition: 0.2s;
   }
 
 .newsletter-button.first{
-  text-decoration: none; 
-  color: white; 
-  background-color:rgb(255, 153, 0); 
-  padding: 0.1em; 
-  padding-right: 0.3em; 
-  padding-left: 0.3em; 
-  border-radius: 10px; 
-  box-shadow: 3px 3px 2px 2px #f1f1f1; 
-  font-family: 'Quantify'; 
+  text-decoration: none;
+  color: white;
+  background-color:rgb(255, 153, 0);
+  padding: 0.1em;
+  padding-right: 0.3em;
+  padding-left: 0.3em;
+  border-radius: 10px;
+  box-shadow: 3px 3px 2px 2px #f1f1f1;
+  font-family: 'Quantify';
   max-width: fit-content;
   text-align: center;
   font-size: 2.4em;
 }
 
 .beta-button {
-  text-decoration: none; 
-  color: white; 
+  text-decoration: none;
+  color: white;
   background-color:rgb(255, 94, 0);
-  padding: 0.1em; 
-  padding-right: 0.3em; 
-  padding-left: 0.3em; 
-  border-radius: 10px; 
-  box-shadow: 3px 3px 2px 2px #f1f1f1; 
-  font-family: 'Quantify';   
+  padding: 0.1em;
+  padding-right: 0.3em;
+  padding-left: 0.3em;
+  border-radius: 10px;
+  box-shadow: 3px 3px 2px 2px #f1f1f1;
+  font-family: 'Quantify';
   max-width: fit-content;
   text-align: center;
   font-size: 2.4em;
@@ -622,9 +624,9 @@ transition: 0.2s;
 
 .under-line {
     background-image: linear-gradient(to right, #ff85aa 0%, #f3f259 100%);
-    background-repeat: repeat-x; 
-    background-position: 0 100%; 
-    background-size: 100% 10px; 
+    background-repeat: repeat-x;
+    background-position: 0 100%;
+    background-size: 100% 10px;
     border-radius: 15%;
 }
 
@@ -665,7 +667,7 @@ transition: 0.2s;
 
 .logo {
   margin-right: 3em;
-  &:hover { 
+  &:hover {
     transform: scale(1.1);
     transition-duration: 0.2s;
   }
@@ -691,12 +693,12 @@ transition: 0.2s;
 }
 
 .footer-list {
-  list-style-type: none; 
-  display: flex; 
-  justify-content: space-evenly; 
-  margin-left: 0.5em; 
-  margin: 0 auto; 
-  margin-bottom: 2em; 
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 0.5em;
+  margin: 0 auto;
+  margin-bottom: 2em;
   align-items: flex-end;
 }
 
@@ -1084,7 +1086,7 @@ transition: 0.2s;
   }
 
   h2.underlined-text {
-    font-size: 1.8em;  
+    font-size: 1.8em;
   }
 
   .phone {
