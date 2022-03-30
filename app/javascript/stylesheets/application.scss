@@ -826,6 +826,11 @@ transition: 0.2s;
 .display-none {
   display: none;
 }
+
+.form-inputs-responsive {
+  display: none;
+}
+
 /* RESPONSIVE */
 
 
@@ -833,6 +838,35 @@ transition: 0.2s;
   /*Tablets [601px -> 1200px]*/
   html, body {
     overflow-x: hidden;
+  }
+
+  .head-input {
+    padding: 0 0px 0px 10px;
+    margin-top: 0.5em;
+  }
+
+  .form-inputs-responsive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 80%;
+    flex-direction: column;
+    margin-bottom: 2em;
+  }
+
+  .head-btn {
+    margin: 0 auto;
+    margin-top: 1em;
+    font-size:1.3em;
+  }
+
+  p.form-inputs-responsive {
+    font-size: 1em;
+  }
+
+  .form-inputs {
+    display: none;
   }
 
   .card {
