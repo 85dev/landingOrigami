@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :unsubscribes
+
   require "sidekiq/web"
   mount Sidekiq::Web => "/sidekiq"
 
@@ -8,6 +10,5 @@ Rails.application.routes.draw do
 
   root to: 'pages#home'
 
-  get '/unsubscribe', to: 'pages#unsubscribe'
 
 end
