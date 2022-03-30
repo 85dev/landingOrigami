@@ -120,13 +120,13 @@
 
 <!-- CONTENT 1 -->
 
-
+<%# 
 <p class="content-text" style="color: black; text-align:center"><strong> Bonjour à tous, </strong>
  vous qui nous lisez ! <br><br> Nous sommes <strong>Clément </strong>et
   <strong>Nicolas</strong>, deux
   développeurs passionés par la tech, le design et l'entreprenariat. Vous pourrez apprendre à nous connaître un peu plus bas mais
   avant cela, laissez-nous vous présenter Origami...
-</p><br><br>
+</p><br><br> %>
 
 <div class="between-container" style="margin-bottom: 1em; margin-top: 2em;">
     <h1 class="title-text" id="partieConcept"> <span class="under-line">A qui
@@ -156,8 +156,8 @@
     </li>
     <li style="padding-bottom: 0.4em;">Rencontrez des personnes ayant les <strong>mêmes centres
     </strong>d'intérêt que vous ?</li>
-    <li style="padding-bottom: 0.4em;"><strong>Eviter de passer par des apps de rencontre </strong>où drague et
-      amitié se confondent...
+    <li style="padding-bottom: 0.4em;">Eviter de passer par des apps de rencontre <strong>où drague et
+      amitié se confondent...</strong>
     </li>
   </ul>
 </div>
@@ -196,14 +196,14 @@
       (dont vous), prêts
       à discuter et à vous
       rencontrer dans une même ville ! </li>
-    <li style="padding:0.5em;"><strong>Bonus : </strong> 'Combo' le Robot vous aide à
+    <li style="padding:0.5em;"><strong>'Combo' le Robot</strong> vous aide à
       <strong> briser la
         glace </strong>
       lors
       des premiers échanges ! En effet, ce robot connaît tous les points communs du groupe et il s'en amusera
-      pour vous faire causer... <strong>plutôt cool</strong> non ?
+      pour stimuler la conversation... <strong>plutôt cool</strong> non ?
     </li>
-    <li style="padding:0.5em;"><strong>Bonus #2 : </strong> En
+    <li style="padding:0.5em;">En
       plus, il vous accompagnera dans votre conversation en <strong>indiquant des évènements dans votre
       ville
     </strong>liés aux
@@ -212,9 +212,9 @@
   <%= image_tag 'mockup_origami', style: "width: 180px;", class: "spinning-mockup" %>
 </div>
 
-      <a href="#Formulaire" class="global-reminder" style="display: flex; text-decoration: none; margin: 0 auto; max-width: 80%; font-size: 1.8em; text-align: center; flex-direction:column; margin-top: 1em; align-items: center; color: black; font-weight: 100; font-family: 'Fredoka'"><li style="display: flex; flex-direction:column; align-items: center;"><%= image_tag('https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg', class: "footer-img", style: "width:80px; color:white")%> S'inscrire à la newsletter pour rester informé ! </li></a>
+      <%# <a href="#Formulaire" class="global-reminder" style="display: flex; text-decoration: none; margin: 0 auto; max-width: 80%; font-size: 1.8em; text-align: center; flex-direction:column; margin-top: 1em; align-items: center; color: black; font-weight: 100; font-family: 'Fredoka'"><li style="display: flex; flex-direction:column; align-items: center;"><%= image_tag('https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg', class: "footer-img", style: "width:80px; color:white")%> S'inscrire à la newsletter pour rester informé ! </li></a>
 
-<div class="between-container">
+<%# <div class="between-container">
 <p class="title-text"><span class="under-line">
   Objectif final : </span>
 </div>
@@ -242,9 +242,9 @@
     </p>
 
   </div>
-</div>
+</div> %> s
 
-      <li class="global-reminder" style="display: flex; flex-direction:column; margin: 0 auto; margin: 0 auto; max-width: 80%;text-align: center; max-width: 80%;text-align: center;  align-items: center; color: black; font-weight: 100; font-size: 1.8em; font-family: 'Fredoka'"><%= link_to image_tag('https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png', class: "footer-img", style: "width: 80px"), "https://www.youtube.com/channel/UC1ZpnwNF2hdMXw6Zibk9b8g" %> Rejoindre l'aventure sur YouTube ! </li>
+      <%# <li class="global-reminder" style="display: flex; flex-direction:column; margin: 0 auto; margin: 0 auto; max-width: 80%;text-align: center; max-width: 80%;text-align: center;  align-items: center; color: black; font-weight: 100; font-size: 1.8em; font-family: 'Fredoka'"><%= link_to image_tag('https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png', class: "footer-img", style: "width: 80px"), "https://www.youtube.com/channel/UC1ZpnwNF2hdMXw6Zibk9b8g" %> Rejoindre l'aventure sur YouTube ! </li> %>
 
 <div class="first-container">
   <h2 style="font-size: 1.8em;">Vous ne passerez plus un vendredi soir sans bonne compagnie.</h2>
@@ -256,7 +256,7 @@
 </div>
 
 
-<div class="between-container">
+<%# <div class="between-container">
   <h2 id="Dev" class="title-text"><span class="under-line">Le développement de l'app</span></h2>
 </div>
 <div class="content-text" style="">
@@ -300,9 +300,9 @@
     <p>L'idée a bien grandi depuis et notre réflexion a mûri, le temps nécessaire pour réfléchir aux <strong>technologies</strong> (les stacks, en langage IT) à utiliser. Au-delà des technologies, nous avons également réfléchi aux façons dont nous pourrions <strong>communiquer</strong> autour du projet. Nous avons retenu quelques inspirations... </p>
   </div>
         <li class="global-reminder" target="_blank" style="max-width: 80%; margin: 0 auto; text-align:center; margin-top: 2em;display: flex; flex-direction:column; align-items: center; font-weight: 100;"><%= link_to image_tag('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png', class: "footer-img", style: "width:80px", target: "_blank"), "https://www.instagram.com/origamiapplication/" %> Suivre l'aventure sur Instagram ! </li>
-</div>
+<%# </div>  %>
 
-<div class="between-container">
+<%# <div class="between-container">
   <h2 class="title-text" id="V&N"><span class="under-line">
     Les Vlogs </span></h2>
 </div>
@@ -331,7 +331,7 @@
   <a href="https://www.youtube.com/channel/UC1ZpnwNF2hdMXw6Zibk9b8g/videos" target="_blank">
 <div id="Vlogs" class="random-container-yt">
     <%=image_tag 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png', class:"youtube-img"%>
-</div>
+<%# </div>
   </a>
 <div class="content-text" style="margin-top: 2em; margin-bottom:0.5em;">
   En Mars 2022, nous entamons les préparatifs (charte
@@ -346,7 +346,7 @@
   l'application dans des conditions réelles. Si vous souhaitez rejoindre cette équipe de bêta-testing,
   vous pourrez le préciser dans le
   formulaire en cochant la case dédiée.
-</div>
+</div> %>
 
 <div class="between-container" style="margin-top: 1.5em; margin-bottom: 1.5em;">
   <h2 id="Contact" class="title-text"> <span class="under-line"> Derrière Origami... </span>
