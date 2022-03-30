@@ -146,10 +146,10 @@
                  speed="1" style="max-width: 260px; min-width: 200px;" loop autoplay></lottie-player>
 </div>
 
-<div class="fourth-container">
+<div class="fourth-container" >
   <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_wloxwco0.json" background="transparent"
                  speed="1" class="phone-msg" style="max-width: 350px; min-width: 250px;" loop autoplay></lottie-player>
-  <ul class="content-text" style="text-align: center;" id="responsive-partie">
+  <ul class="content-text" id="responsive-partie">
     <h2>...et souhaitez naturellement...</h2>
     <li style="padding-bottom: 0.4em;">Agrandir votre <strong>cercle d'amis</strong> au-delà de votre milieu
       professionnel ou universitaire ?
@@ -297,9 +297,6 @@
     nous
     faisons une
     pause autour de la réflexion de Origami pour se consacrer à diverses missions free-lance.
-    <div style="display: flex; width: 100%; justify-content:center">
-    <%= image_tag 'img-origami1', style: "max-width:950px; margin-top: 1em;" %>
-    </div>
     <p>L'idée a bien grandi depuis et notre réflexion a mûri, le temps nécessaire pour réfléchir aux <strong>technologies</strong> (les stacks, en langage IT) à utiliser. Au-delà des technologies, nous avons également réfléchi aux façons dont nous pourrions <strong>communiquer</strong> autour du projet. Nous avons retenu quelques inspirations... </p>
   </div>
         <li class="global-reminder" target="_blank" style="max-width: 80%; margin: 0 auto; text-align:center; margin-top: 2em;display: flex; flex-direction:column; align-items: center; font-weight: 100;"><%= link_to image_tag('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png', class: "footer-img", style: "width:80px", target: "_blank"), "https://www.instagram.com/origamiapplication/" %> Suivre l'aventure sur Instagram ! </li>
@@ -321,21 +318,16 @@
   Dans cette série de vlogs, nous
   parlerons
   notamment : </h2>
-<ol class="content-text" style="padding-left:1.7em;">
-  <li style="padding-top: 1em;"> 🤠 De<strong> l'entreprenariat,</strong> des problématiques marketing, de communication, de
-    tech, </li>
-  <li style="padding-top: 1em;"> 🖥️ De dev, de <strong>programmation,</strong> de code, </li>
-  <li style="padding-top: 1em;"> 🤣 Nous raconterons quelques <strong>petites blagues </strong> car nous
+  <p class="content-text" style="padding-top: 1em; margin-bottom: 2em;"> De<strong> l'entreprenariat,</strong> des problématiques marketing, de communication, de
+    tech, de dev, de <strong>programmation,</strong> de code... Nous raconterons quelques <strong>petites blagues </strong> car nous
     sommes
     des
-    polissons, </li>
-  <li style="padding-top: 1em; margin-bottom: 2em;"> 🐳 Au-delà des sujets abordés, vous vivrez avec nous une
+    polissons, 🐳 Au-delà des sujets abordés, vous vivrez avec nous une
     <strong>immersion totale
     </strong> dans la conception du
     projet
     !
-  </li>
-</ol>
+  </p>
   <a href="https://www.youtube.com/channel/UC1ZpnwNF2hdMXw6Zibk9b8g/videos" target="_blank">
 <div id="Vlogs" class="random-container-yt">
     <%=image_tag 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png', class:"youtube-img"%>
