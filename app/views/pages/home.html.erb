@@ -11,7 +11,7 @@
     </a>
 
     <a href="#V&N" style="text-decoration: none; color: white">
-      <li class="button"> Vlogs & Newsletter </li>
+      <li class="button"> Vlogs </li>
     </a>
 
     <a href="#Contact" style="text-decoration: none; color: white">
@@ -60,8 +60,8 @@
     </h1>
       <div class="form-inputs">
       <div class="ssss" style="flex-direction: column;">
-      <p style="font-family: 'Fredoka'; font-size: 0.6em; font-weight: 100; margin-bottom: -0.2em; color:#233853; min-width: 300px;">S'inscrire à la newsletter 📩 </p>
-      <input type="text" class="head-input" placeholder="example@xyz.com">
+      <p style="font-family: 'Quantify'; font-size: 0.6em; font-weight: 100; margin-bottom: -0.2em; color:#233853; min-width: 300px;">S'inscrire à la newsletter 📩 </p>
+      <input type="text" class="head-input" placeholder="resterinformé@xyz.com">
     </div>
     <a href="#Formulaire">
       <button class="head-btn">
@@ -79,10 +79,10 @@
 
 <!-- WAVES & SHAPES BACKGROUND -->
 
-<div class="absolute-bg" style="position: absolute; top:-2%; min-width:102%; left:-1%;">
+<div class="absolute-bg" style="position: absolute; top:-2%; min-width:101.5%; left:-0.8%;">
   <%= image_tag 'SVG/desktop-waves-cover3Fichier 38',class:"desktop-waves", style:"position:absolute; z-index:-4; top:0; right: 0; height:auto;"%>
 </div>
-s
+
 <div class="absolute-bg" style="position: absolute; top:-2%; min-width:103.3%; left:-1.1%;">
   <%= image_tag "SVG/linesFichier 46", class:"responsive-waves", style:"position:absolute; z-index:-4; top:0; " %>
 </div>
@@ -292,13 +292,12 @@ s
     </div>
     <p>L'idée a bien grandi depuis et notre réflexion a mûri, le temps nécessaire pour réfléchir aux <strong>technologies</strong> (les stacks, en langage IT) à utiliser. Au-delà des technologies, nous avons également réfléchi aux façons dont nous pourrions <strong>communiquer</strong> autour du projet. Nous avons retenu quelques inspirations... </p>
   </div>
-        <li class="global-reminder" style="max-width: 80%; margin: 0 auto; text-align:center; margin-top: 2em;display: flex; flex-direction:column; align-items: center; font-weight: 100;"><%= link_to image_tag('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png', class: "footer-img", style: "width:80px"), "https://www.instagram.com/origamiapplication/" %> Suivre l'aventure sur Instagram ! </li>
+        <li class="global-reminder" target="_blank" style="max-width: 80%; margin: 0 auto; text-align:center; margin-top: 2em;display: flex; flex-direction:column; align-items: center; font-weight: 100;"><%= link_to image_tag('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png', class: "footer-img", style: "width:80px", target: "_blank"), "https://www.instagram.com/origamiapplication/" %> Suivre l'aventure sur Instagram ! </li>
 </div>
 
 <div class="between-container">
   <h2 class="title-text" id="V&N"><span class="under-line">
-    Les Vlogs & la
-    Newsletter</span></h2>
+    Les Vlogs </span></h2>
 </div>
 
 <div class="content-text" style="margin-top: 1.5em;">
@@ -347,70 +346,6 @@ s
   formulaire en cochant la case dédiée.
 </div>
 
-<div class="button-group" style="display: flex; justify-content: center; align-items:center; flex-direction: column; max-width: 80%; margin: 0 auto; margin-bottom: 2em;">
-  <div class="newsletter-button first" style="text-decoration: none; color: white;"> Formulaire 'Newsletter'</div>
-</div>
-<div data-controller="form">
-<div data-form-target="form">
- <%= form_for @user, url: { controller: 'users', action: 'create' }, remote: true do |form| %>
-        <div class="form-group-news" style="padding: 1em;">
-          <h2  class="title-text" id="Formulaire" style="font-size:1.6em;">Formulaire d'inscription à la Newsletter</h2>
-
-            <%= form.label :email, "Email :", style:"margin-bottom: 0.2em;  margin-top: 0.6em;" %>
-            <%= form.text_field :email, placeholder: "michel@example.com", style: "font-family: 'Fredoka'; font-size: 0.95em;"  %>
-
-            <div class="submit" style="margin-top: 1em; display: flex; justify-content: center">
-              <%= form.submit "S'inscrire à la newsletter", class:"btn-form" %>
-            </div>
-        </div>
-      <% end %>
-      <div id="alert"></div>
-</div>
-  <div class="button-group" style="display: flex; justify-content: center; align-items:center; flex-direction: column; max-width: 80%; margin: 0 auto; margin-top: 2em; margin-bottom: 2em;">
-    <div class="beta-button second" style="text-decoration: none; color: white; cursor: pointer;" data-form-target="text" data-action="click->form#openHelperForm"> Formulaire 'Participer' ↓ </div>
-  </div>
-  <div data-form-target="formHelper" class="display-none">
-      <%= form_with do |form| %>
-        <div class="form-group" id="BETA" style="padding: 1em;">
-        <h2 class="title-text" style="font-size:1.6em;">Formulaire d'inscription aux tests (version Bêta)</h2>
-            <%= form.label :query, "Nom :", style:"margin-bottom: 0.2em;" %>
-            <%= form.text_field :query, placeholder: "Michel", style: "font-family: 'Fredoka'; font-size: 0.95em;" %>
-
-            <%= form.label :query, "Prénom :", style:"margin-bottom: 0.2em; margin-top: 0.6em" %>
-            <%= form.text_field :query, placeholder: "Albertino", style: "font-family: 'Fredoka'; font-size: 0.95em;" %>
-
-            <%= form.label :query, "Âge :", style:"margin-bottom: 0.2em; margin-top: 0.6em;" %>
-            <%= form.text_field :query, placeholder: "18", style: "font-family: 'Fredoka'; font-size: 0.95em;"  %>
-
-            <%= form.label :query, "Email :", style:"margin-bottom: 0.2em;  margin-top: 0.6em;" %>
-            <%= form.text_field :query, placeholder: "michel@example.com", style: "font-family: 'Fredoka'; font-size: 0.95em;"  %>
-
-            <%= form.label :query, "Ville :", style:"margin-bottom: 0.2em;  margin-top: 0.6em;" %>
-            <%= form.text_field :query, placeholder: "Lyon", style: "font-family: 'Fredoka'; font-size: 0.95em;"  %>
-
-            <%= form.label :query, "Situation pro :", style:"margin-bottom: 0.2em;  margin-top: 0.6em;" %>
-            <%= form.text_field :query, placeholder: "Cadre, étudiant...", style: "font-family: 'Fredoka'; font-size: 0.95em;"  %>
-
-              <div class="checkbox-container" style="margin-top: 0.2em;">
-            <ul>
-                <%= form.label :query, "Je souhaite être bêta-testeur*", style:" font-weight: 400;"  %>
-                <%= form.check_box :checkbox, class:"checkbox" %>
-            </ul>
-              </div>
-
-              <div class="text-betatest" style="display: inline-block; margin-top: -1em; font-style:italic; font-size: 0.9em; font-weight: 100;">
-                <ul>
-                <p>*J'accepte d'être contacté par l'organisation afin de participer à des tests de l'application mobile, je m'inscris également à la newsletter.</p>
-                </ul>
-              </div>
-
-            <div class="submit" style="margin-top: 1em; display: flex; justify-content: center">
-              <%= form.submit "Envoyer", class:"btn-form" %>
-            </div>
-        </div>
-      <% end %>
-  </div>
-</div>
 <div class="between-container" style="margin-top: 1.5em; margin-bottom: 1.5em;">
   <h2 id="Contact" class="title-text"> <span class="under-line"> Derrière Origami... </span>
   </h2>
