@@ -8,11 +8,6 @@ class UsersController < ApplicationController
     end
   end
 
-  def create_helper
-    @user = User.new(user_params)
-    # User
-  end
-
   private
 
   def user_params

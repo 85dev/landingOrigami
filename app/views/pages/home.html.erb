@@ -2,7 +2,11 @@
 
 <nav>
   <ul style="color: white; font-family: 'Fredoka'">
-    <li id="logo" class="logo"> <%= image_tag ('SVG/logoTW'), style:"width: 100px;" %></li>
+    <li id="logo" class="logo">
+      <%= link_to root_path do %>
+      <%= image_tag ('SVG/logoTW'), style:"width: 100px;" %>
+      <% end %>
+    </li>
     <a href="#partieConcept" style="text-decoration: none; color: white">
       <li class="button"> l'App </li>
     </a>
@@ -43,6 +47,7 @@
 
 <!-- MAIN TITLE SLOGAN -->
 
+<div id="alert"></div>
 <div class="img-container" style="margin-top: 1em;">
   <div class="text-container">
     <h1 class="desktop-text" style="max-width:90%; margin: 0 auto; padding-right: 0.5em; color:white;">
@@ -387,11 +392,11 @@
 <div class="footer" style="max-height: fit-content; margin-top: 2em; ">
     <div class="footer-list" style="color:white; font-weight:400">
       <a href="#logo" style="margin-top: 2em;text-decoration: none;"><li style="display: flex; flex-direction:column; align-items: center;"><%= image_tag('SVG/logoTW', class: "footer-img", style: "width:120px")%> </li></a>
-      <li style="margin-top: 2em; display: flex; flex-direction:column; align-items: center;"><%= link_to image_tag('https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/YouTube_social_white_squircle.svg/1200px-YouTube_social_white_squircle.svg.png', class: "footer-img", style: "width: 50px"), "https://www.youtube.com/channel/UC1ZpnwNF2hdMXw6Zibk9b8g" %> YouTube</li>
-      <li style="margin-top: 2em;display: flex; flex-direction:column; align-items: center;"><%= link_to image_tag('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png', class: "footer-img", style: "width:50px"), "https://www.instagram.com/origamiapplication/" %> Instagram</li>
+      <li style="margin-top: 2em; display: flex; flex-direction:column; align-items: center;"><%= link_to image_tag('https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/YouTube_social_white_squircle.svg/1200px-YouTube_social_white_squircle.svg.png', class: "footer-img", style: "width: 50px", :target => "_blank"), "https://www.youtube.com/channel/UC1ZpnwNF2hdMXw6Zibk9b8g" %> YouTube</li>
+      <li style="margin-top: 2em;display: flex; flex-direction:column; align-items: center;"><%= link_to image_tag('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png', class: "footer-img", style: "width:50px"), "https://www.instagram.com/origamiapplication/", :target => "_blank" %> Instagram</li>
       <a href="#Formulaire" style="margin-top: 2em;text-decoration: none; color: white;"><li style="display: flex; flex-direction:column; align-items: center;"><%= image_tag('https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg', class: "footer-img", style: "width:50px; color:white")%> La newsletter</li></a>
-      <li style="margin-top: 2em;display: flex; flex-direction:column; align-items: center;"><%= link_to image_tag('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Facebook_F_icon.svg/2048px-Facebook_F_icon.svg.png', class: "footer-img", style: "width:50px; border-radius: 5px;"), "https://www.facebook.com/origamiapplication/" %> Facebook </li>
-      <li style="margin-top: 2em;display: flex; flex-direction:column; align-items: center;"><%= link_to image_tag('https://files.helpdocs.io/zqc32mkmew/other/1608127986258/ideogram.png?t=1608127986258', class: "footer-img", style: "width:50px"), "https://lydia-app.com/collect/7799-orig-ami/fr" %> Nous soutenir </li>
+      <li style="margin-top: 2em;display: flex; flex-direction:column; align-items: center;"><%= link_to image_tag('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Facebook_F_icon.svg/2048px-Facebook_F_icon.svg.png', class: "footer-img", style: "width:50px; border-radius: 5px;"), "https://www.facebook.com/origamiapplication/", :target => "_blank" %> Facebook </li>
+      <li style="margin-top: 2em;display: flex; flex-direction:column; align-items: center;"><%= link_to image_tag('https://files.helpdocs.io/zqc32mkmew/other/1608127986258/ideogram.png?t=1608127986258', class: "footer-img", style: "width:50px"), "https://lydia-app.com/collect/7799-orig-ami/fr", :target => "_blank" %> Nous soutenir </li>
     </div>
     <p class="backyard" style="text-align:center; margin-bottom:0.2em;">Origami 2022, tous droits réservés.</p>
 </div>
