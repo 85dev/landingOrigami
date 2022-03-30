@@ -59,14 +59,15 @@
       <p class="strong">demain.</p>
     </h1>
       <div class="form-inputs">
-        <div style="flex-direction: column;">
-        <p style="font-family: 'Quantify'; font-size: 0.6em; font-weight: 100; margin-bottom: -0.2em; color:#233853; min-width: 300px;">S'inscrire à la newsletter 📩 </p>
-        <%= form_for @user,  url: { controller: 'users', action: 'create' }, remote: true do |form| %>
-          <%= form.text_field :email, class: 'head-input', placeholder: 'resterinformé@xyz.com' %>
-        </div>
+      <div class="ssss" style="flex-direction: column;">
+      <p style="font-family: 'Quantify'; font-size: 0.6em; font-weight: 100; margin-bottom: -0.2em; color:#233853; min-width: 300px;">S'inscrire à la newsletter 📩 </p>
+      <%= form_with do |form| %>
+      <input type="text" class="head-input" placeholder="resterinformé@xyz.com">
+    </div>
         <a href="#Formulaire">
-          <%= form.submit "Inscription →", class: "head-btn" %></a>
-      </div>
+          <%= form.submit "Inscription →", class: "head-btn"%>
+          </a>
+        </div>
       </div>
     <% end %>
   <div class="img-relative-container">
@@ -119,7 +120,7 @@
 
 <!-- CONTENT 1 -->
 
-<%#
+<%# 
 <p class="content-text" style="color: black; text-align:center"><strong> Bonjour à tous, </strong>
  vous qui nous lisez ! <br><br> Nous sommes <strong>Clément </strong>et
   <strong>Nicolas</strong>, deux
