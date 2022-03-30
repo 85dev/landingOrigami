@@ -6,11 +6,11 @@
     <a href="#partieConcept" style="text-decoration: none; color: white">
       <li class="button"> l'App </li>
     </a>
-    <a href="#Dev" style="text-decoration: none; color: white">
+    <a href="#" style="text-decoration: none; color: white">
       <li class="button"> le Développement </li>
     </a>
 
-    <a href="#V&N" style="text-decoration: none; color: white">
+    <a href="#" style="text-decoration: none; color: white">
       <li class="button"> Vlogs </li>
     </a>
 
@@ -23,15 +23,15 @@
 <div class="responsive-nav" style="position: absolute; top:6%; z-index: 3">
 <%= image_tag ('SVG/path_navFichier 19'), style:"position: absolute; top:0; z-index: 2; margin-left: 2em; left:-10%; width:40px;", class:"menu-path" %>
   <ul class="responsive-menu" style="font-family: 'Fredoka'">
-    <p style="color:black; font-size: 1.3em; color: black;">🛥️ Menu</p>
+    <p style="color:black; font-size: 1.3em;">🛥️ Menu</p>
     <a href="#partieConcept" style="text-decoration: none; color: white">
       <li class="button">📱 l'App </li>
     </a>
-    <a href="#Dev" style="text-decoration: none; color: white">
+    <a href="#" style="text-decoration: none; color: white">
       <li class="button">💻 le Développement </li>
     </a>
 
-    <a href="#V&N" style="text-decoration: none; color: white">
+    <a href="#" style="text-decoration: none; color: white">
       <li class="button">🗞️ Vlogs & Newsletter </li>
     </a>
 
@@ -59,15 +59,12 @@
       <p class="strong">demain.</p>
     </h1>
       <div class="form-inputs">
-      <div class="ssss" style="flex-direction: column;">
-      <p style="font-family: 'Quantify'; font-size: 0.6em; font-weight: 100; margin-bottom: -0.2em; color:#233853; min-width: 300px;">S'inscrire à la newsletter 📩 </p>
-      <%= form_with do |form| %>
-      <input type="text" class="head-input" placeholder="resterinformé@xyz.com">
-    </div>
-        <a href="#Formulaire">
-          <%= form.submit "Inscription →", class: "head-btn"%>
-          </a>
+        <div style="flex-direction: column;">
+        <p style="font-family: 'Quantify'; font-size: 0.6em; font-weight: 100; margin-bottom: -0.2em; color:#233853; min-width: 300px;">S'inscrire à la newsletter 📩 </p>
+        <%= form_for @user,  url: { controller: 'users', action: 'create' }, remote: true do |form| %>
+          <%= form.text_field :email, class: 'head-input', placeholder: 'resterinformé@xyz.com' %>
         </div>
+          <%= form.submit "Inscription →", class: "head-btn" %>
       </div>
     <% end %>
   <div class="img-relative-container">
@@ -90,13 +87,10 @@
 <!-- APP EN DEVELOPPEMENT -->
     <div class="form-inputs-responsive">
       <p style="font-family: 'Quantify'; font-size: 1.4em; font-weight: 100; margin-bottom: -0.2em; color:#233853; min-width: 300px;">S'inscrire à la newsletter 📩 </p>
-      <input type="text" class="head-input" placeholder="resterinformé@xyz.com">
-    <a href="#Formulaire">
-      <button class="head-btn">
-        Inscription →
-      </button>
-    </a>
-  </div>
+      <%= form_for @user,  url: { controller: 'users', action: 'create' }, remote: true do |form| %>
+        <%= form.text_field :email, class: 'head-input', placeholder: 'resterinformé@xyz.com' %>
+        <%= form.submit "Inscription →", class: "head-btn" %>
+        <% end %>
   </div>
 
 <div class="card">
@@ -373,12 +367,12 @@
   Mercier
   se lient
   d'amitié
-  autour d'une passion commune : le développement, le design et le produit. <br></br>
+  autour d'une passion commune : le développement, le design et le produit. <br>
   C'est <strong>Clément</strong> qui se chargera de la partie back-end du projet.
   Avec un solide background
   en programmation
   web et software ainsi qu'un passage à l'école 42, il excelle dans la gestion de la data et
-  l'algorhitmie. <br></br>
+  l'algorhitmie. <br>
   Quant à <strong>Nicolas</strong>, après s'être vu diplomé d'un Master en
   Marketing & Communication, il décide d'ajouter une corde à son arc et découvre le développement web
   pendant le bootcamp au Wagon. Doté de solides expériences professionnelles en développement web, design
