@@ -1,0 +1,46 @@
+
+ <div class="button-group" style="display: flex; justify-content: center; align-items:center; flex-direction: column; max-width: 80%; margin: 0 auto; margin-top: 2em; margin-bottom: 2em;">
+    <div class="beta-button second" style="text-decoration: none; color: white; cursor: pointer;" data-form-target="text" data-action="click->form#openHelperForm"> Formulaire 'Participer' ↓ </div>
+  </div>
+  <div data-form-target="formHelper" class="display-none">
+      <%= form_with do |form| %>
+        <div class="form-group" id="BETA" style="padding: 1em;">
+        <h2 class="title-text" style="font-size:1.6em;">Formulaire d'inscription aux tests (version Bêta)</h2>
+            <%= form.label :query, "Nom :", style:"margin-bottom: 0.2em;" %>
+            <%= form.text_field :query, placeholder: "Michel", style: "font-family: 'Fredoka'; font-size: 0.95em;" %>
+
+            <%= form.label :query, "Prénom :", style:"margin-bottom: 0.2em; margin-top: 0.6em" %>
+            <%= form.text_field :query, placeholder: "Albertino", style: "font-family: 'Fredoka'; font-size: 0.95em;" %>
+
+            <%= form.label :query, "Âge :", style:"margin-bottom: 0.2em; margin-top: 0.6em;" %>
+            <%= form.text_field :query, placeholder: "18", style: "font-family: 'Fredoka'; font-size: 0.95em;"  %>
+
+            <%= form.label :query, "Email :", style:"margin-bottom: 0.2em;  margin-top: 0.6em;" %>
+            <%= form.text_field :query, placeholder: "michel@example.com", style: "font-family: 'Fredoka'; font-size: 0.95em;"  %>
+
+            <%= form.label :query, "Ville :", style:"margin-bottom: 0.2em;  margin-top: 0.6em;" %>
+            <%= form.text_field :query, placeholder: "Lyon", style: "font-family: 'Fredoka'; font-size: 0.95em;"  %>
+
+            <%= form.label :query, "Situation pro :", style:"margin-bottom: 0.2em;  margin-top: 0.6em;" %>
+            <%= form.text_field :query, placeholder: "Cadre, étudiant...", style: "font-family: 'Fredoka'; font-size: 0.95em;"  %>
+
+              <div class="checkbox-container" style="margin-top: 0.2em;">
+            <ul>
+                <%= form.label :query, "Je souhaite être bêta-testeur*", style:" font-weight: 400;"  %>
+                <%= form.check_box :checkbox, class:"checkbox" %>
+            </ul>
+              </div>
+
+              <div class="text-betatest" style="display: inline-block; margin-top: -1em; font-style:italic; font-size: 0.9em; font-weight: 100;">
+                <ul>
+                <p>*J'accepte d'être contacté par l'organisation afin de participer à des tests de l'application mobile, je m'inscris également à la newsletter.</p>
+                </ul>
+              </div>
+
+            <div class="submit" style="margin-top: 1em; display: flex; justify-content: center">
+              <%= form.submit "Envoyer", class:"btn-form" %>
+            </div>
+        </div>
+      <% end %>
+  </div>
+</div>

@@ -11,7 +11,7 @@
     </a>
 
     <a href="#V&N" style="text-decoration: none; color: white">
-      <li class="button"> Vlogs & Newsletter </li>
+      <li class="button"> Vlogs </li>
     </a>
 
     <a href="#Contact" style="text-decoration: none; color: white">
@@ -45,8 +45,7 @@
 
 <div class="img-container" style="margin-top: 1em;">
   <div class="text-container">
-    <h1 class="desktop-text" style="max-width:90%; margin: 0 auto; padding-right: 0.5em;     color:white;
-    ">
+    <h1 class="desktop-text" style="max-width:90%; margin: 0 auto; padding-right: 0.5em; color:white;">
       <p class="strong3">Rencontrez aujourd'hui
         vos
         amis de </p>
@@ -59,6 +58,17 @@
         amis de</p>
       <p class="strong">demain.</p>
     </h1>
+      <div class="form-inputs">
+      <div class="ssss" style="flex-direction: column;">
+      <p style="font-family: 'Quantify'; font-size: 0.6em; font-weight: 100; margin-bottom: -0.2em; color:#233853; min-width: 300px;">S'inscrire à la newsletter 📩 </p>
+      <input type="text" class="head-input" placeholder="resterinformé@xyz.com">
+    </div>
+    <a href="#Formulaire">
+      <button class="head-btn">
+        Inscription →
+      </button>
+    </a>
+  </div>
   </div>
   <div class="img-relative-container">
   <%= image_tag 'mockup2', class: "mockup2" %>
@@ -69,15 +79,25 @@
 
 <!-- WAVES & SHAPES BACKGROUND -->
 
-<div class="absolute-bg" style="position: absolute; top:-2%; min-width:102%; left:-1%;">
+<div class="absolute-bg" style="position: absolute; top:-2%; min-width:101.5%; left:-0.8%;">
   <%= image_tag 'SVG/desktop-waves-cover3Fichier 38',class:"desktop-waves", style:"position:absolute; z-index:-4; top:0; right: 0; height:auto;"%>
 </div>
-s
+
 <div class="absolute-bg" style="position: absolute; top:-2%; min-width:103.3%; left:-1.1%;">
   <%= image_tag "SVG/linesFichier 46", class:"responsive-waves", style:"position:absolute; z-index:-4; top:0; " %>
 </div>
 
 <!-- APP EN DEVELOPPEMENT -->
+    <div class="form-inputs-responsive">
+      <p style="font-family: 'Quantify'; font-size: 1.4em; font-weight: 100; margin-bottom: -0.2em; color:#233853; min-width: 300px;">S'inscrire à la newsletter 📩 </p>
+      <input type="text" class="head-input" placeholder="resterinformé@xyz.com">
+    <a href="#Formulaire">
+      <button class="head-btn">
+        Inscription →
+      </button>
+    </a>
+  </div>
+  </div>
 
 <div class="card">
   <h2 class="defiling"
@@ -100,13 +120,13 @@ s
 
 <!-- CONTENT 1 -->
 
-
+<%# 
 <p class="content-text" style="color: black; text-align:center"><strong> Bonjour à tous, </strong>
  vous qui nous lisez ! <br><br> Nous sommes <strong>Clément </strong>et
   <strong>Nicolas</strong>, deux
   développeurs passionés par la tech, le design et l'entreprenariat. Vous pourrez apprendre à nous connaître un peu plus bas mais
   avant cela, laissez-nous vous présenter Origami...
-</p><br><br>
+</p><br><br> %>
 
 <div class="between-container" style="margin-bottom: 1em; margin-top: 2em;">
     <h1 class="title-text" id="partieConcept"> <span class="under-line">A qui
@@ -126,18 +146,18 @@ s
                  speed="1" style="max-width: 260px; min-width: 200px;" loop autoplay></lottie-player>
 </div>
 
-<div class="fourth-container">
+<div class="fourth-container" >
   <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_wloxwco0.json" background="transparent"
                  speed="1" class="phone-msg" style="max-width: 350px; min-width: 250px;" loop autoplay></lottie-player>
-  <ul class="content-text" style="text-align: center;" id="responsive-partie">
+  <ul class="content-text" id="responsive-partie">
     <h2>...et souhaitez naturellement...</h2>
     <li style="padding-bottom: 0.4em;">Agrandir votre <strong>cercle d'amis</strong> au-delà de votre milieu
       professionnel ou universitaire ?
     </li>
     <li style="padding-bottom: 0.4em;">Rencontrez des personnes ayant les <strong>mêmes centres
     </strong>d'intérêt que vous ?</li>
-    <li style="padding-bottom: 0.4em;"><strong>Eviter de passer par des apps de rencontre </strong>où drague et
-      amitié se confondent...
+    <li style="padding-bottom: 0.4em;">Eviter de passer par des apps de rencontre <strong>où drague et
+      amitié se confondent...</strong>
     </li>
   </ul>
 </div>
@@ -176,14 +196,14 @@ s
       (dont vous), prêts
       à discuter et à vous
       rencontrer dans une même ville ! </li>
-    <li style="padding:0.5em;"><strong>Bonus : </strong> 'Combo' le Robot vous aide à
+    <li style="padding:0.5em;"><strong>'Combo' le Robot</strong> vous aide à
       <strong> briser la
         glace </strong>
       lors
       des premiers échanges ! En effet, ce robot connaît tous les points communs du groupe et il s'en amusera
-      pour vous faire causer... <strong>plutôt cool</strong> non ?
+      pour stimuler la conversation... <strong>plutôt cool</strong> non ?
     </li>
-    <li style="padding:0.5em;"><strong>Bonus #2 : </strong> En
+    <li style="padding:0.5em;">En
       plus, il vous accompagnera dans votre conversation en <strong>indiquant des évènements dans votre
       ville
     </strong>liés aux
@@ -192,9 +212,9 @@ s
   <%= image_tag 'mockup_origami', style: "width: 180px;", class: "spinning-mockup" %>
 </div>
 
-      <a href="#Newsletter" class="global-reminder" style="display: flex; text-decoration: none; margin: 0 auto; max-width: 80%; font-size: 1.8em; text-align: center; flex-direction:column; margin-top: 1em; align-items: center; color: black; font-weight: 100; font-family: 'Fredoka'"><li style="display: flex; flex-direction:column; align-items: center;"><%= image_tag('https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg', class: "footer-img", style: "width:80px; color:white")%> S'inscrire à la newsletter pour rester informé ! </li></a>
+      <%# <a href="#Formulaire" class="global-reminder" style="display: flex; text-decoration: none; margin: 0 auto; max-width: 80%; font-size: 1.8em; text-align: center; flex-direction:column; margin-top: 1em; align-items: center; color: black; font-weight: 100; font-family: 'Fredoka'"><li style="display: flex; flex-direction:column; align-items: center;"><%= image_tag('https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg', class: "footer-img", style: "width:80px; color:white")%> S'inscrire à la newsletter pour rester informé ! </li></a>
 
-<div class="between-container">
+<%# <div class="between-container">
 <p class="title-text"><span class="under-line">
   Objectif final : </span>
 </div>
@@ -215,16 +235,16 @@ s
     <lottie-player src="https://assets1.lottiefiles.com/private_files/lf30_llpflzsi.json"
                    background="transparent" speed="1" style="max-width: 500px;" loop autoplay></lottie-player>
 
-    <p class="content-text" style="margin-bottom: 3em;"> Souscrivez à la <a href="#Newsletter" style="text-decoration:none; color:black;"><strong>Newsletter</strong></a>, aux réseaux sociaux et à la
+    <p class="content-text" style="margin-bottom: 3em;"> Souscrivez à la <a href="#Formulaire" style="text-decoration:none; color:black;"><strong>Newsletter</strong></a>, aux réseaux sociaux et à la
       chaîne YouTube pour rester
       informés
       !
     </p>
 
   </div>
-</div>
+</div> %> s
 
-      <li class="global-reminder" style="display: flex; flex-direction:column; margin: 0 auto; margin: 0 auto; max-width: 80%;text-align: center; max-width: 80%;text-align: center;  align-items: center; color: black; font-weight: 100; font-size: 1.8em; font-family: 'Fredoka'"><%= link_to image_tag('https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png', class: "footer-img", style: "width: 80px"), "https://www.youtube.com/channel/UC1ZpnwNF2hdMXw6Zibk9b8g" %> Rejoindre l'aventure sur YouTube ! </li>
+      <%# <li class="global-reminder" style="display: flex; flex-direction:column; margin: 0 auto; margin: 0 auto; max-width: 80%;text-align: center; max-width: 80%;text-align: center;  align-items: center; color: black; font-weight: 100; font-size: 1.8em; font-family: 'Fredoka'"><%= link_to image_tag('https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png', class: "footer-img", style: "width: 80px"), "https://www.youtube.com/channel/UC1ZpnwNF2hdMXw6Zibk9b8g" %> Rejoindre l'aventure sur YouTube ! </li> %>
 
 <div class="first-container">
   <h2 style="font-size: 1.8em;">Vous ne passerez plus un vendredi soir sans bonne compagnie.</h2>
@@ -236,7 +256,7 @@ s
 </div>
 
 
-<div class="between-container">
+<%# <div class="between-container">
   <h2 id="Dev" class="title-text"><span class="under-line">Le développement de l'app</span></h2>
 </div>
 <div class="content-text" style="">
@@ -277,18 +297,14 @@ s
     nous
     faisons une
     pause autour de la réflexion de Origami pour se consacrer à diverses missions free-lance.
-    <div style="display: flex; width: 100%; justify-content:center">
-    <%= image_tag 'img-origami1', style: "max-width:950px; margin-top: 1em;" %>
-    </div>
     <p>L'idée a bien grandi depuis et notre réflexion a mûri, le temps nécessaire pour réfléchir aux <strong>technologies</strong> (les stacks, en langage IT) à utiliser. Au-delà des technologies, nous avons également réfléchi aux façons dont nous pourrions <strong>communiquer</strong> autour du projet. Nous avons retenu quelques inspirations... </p>
   </div>
-        <li class="global-reminder" style="max-width: 80%; margin: 0 auto; text-align:center; margin-top: 2em;display: flex; flex-direction:column; align-items: center; font-weight: 100;"><%= link_to image_tag('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png', class: "footer-img", style: "width:80px"), "https://www.instagram.com/origamiapplication/" %> Suivre l'aventure sur Instagram ! </li>
-</div>
+        <li class="global-reminder" target="_blank" style="max-width: 80%; margin: 0 auto; text-align:center; margin-top: 2em;display: flex; flex-direction:column; align-items: center; font-weight: 100;"><%= link_to image_tag('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png', class: "footer-img", style: "width:80px", target: "_blank"), "https://www.instagram.com/origamiapplication/" %> Suivre l'aventure sur Instagram ! </li>
+<%# </div>  %>
 
-<div class="between-container">
+<%# <div class="between-container">
   <h2 class="title-text" id="V&N"><span class="under-line">
-    Les Vlogs & la
-    Newsletter</span></h2>
+    Les Vlogs </span></h2>
 </div>
 
 <div class="content-text" style="margin-top: 1.5em;">
@@ -302,25 +318,20 @@ s
   Dans cette série de vlogs, nous
   parlerons
   notamment : </h2>
-<ol class="content-text" style="padding-left:1.7em;">
-  <li style="padding-top: 1em;"> 🤠 De<strong> l'entreprenariat,</strong> des problématiques marketing, de communication, de
-    tech, </li>
-  <li style="padding-top: 1em;"> 🖥️ De dev, de <strong>programmation,</strong> de code, </li>
-  <li style="padding-top: 1em;"> 🤣 Nous raconterons quelques <strong>petites blagues </strong> car nous
+  <p class="content-text" style="padding-top: 1em; margin-bottom: 2em;"> De<strong> l'entreprenariat,</strong> des problématiques marketing, de communication, de
+    tech, de dev, de <strong>programmation,</strong> de code... Nous raconterons quelques <strong>petites blagues </strong> car nous
     sommes
     des
-    polissons, </li>
-  <li style="padding-top: 1em; margin-bottom: 2em;"> 🐳 Au-delà des sujets abordés, vous vivrez avec nous une
+    polissons, 🐳 Au-delà des sujets abordés, vous vivrez avec nous une
     <strong>immersion totale
     </strong> dans la conception du
     projet
     !
-  </li>
-</ol>
+  </p>
   <a href="https://www.youtube.com/channel/UC1ZpnwNF2hdMXw6Zibk9b8g/videos" target="_blank">
 <div id="Vlogs" class="random-container-yt">
     <%=image_tag 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png', class:"youtube-img"%>
-</div>
+<%# </div>
   </a>
 <div class="content-text" style="margin-top: 2em; margin-bottom:0.5em;">
   En Mars 2022, nous entamons les préparatifs (charte
@@ -335,72 +346,8 @@ s
   l'application dans des conditions réelles. Si vous souhaitez rejoindre cette équipe de bêta-testing,
   vous pourrez le préciser dans le
   formulaire en cochant la case dédiée.
-</div>
+</div> %>
 
-<div class="button-group" style="display: flex; justify-content: center; align-items:center; flex-direction: column; max-width: 80%; margin: 0 auto; margin-bottom: 2em;">
-  <div class="newsletter-button first" style="text-decoration: none; color: white;"> Formulaire 'Newsletter'</div>
-</div>
-<div data-controller="form">
-<div data-form-target="form">
- <%= form_for @user, url: { controller: 'users', action: 'create' }, remote: true do |form| %>
-        <div class="form-group-news" style="padding: 1em;">
-          <h2  class="title-text" id="Formulaire" style="font-size:1.6em;">Formulaire d'inscription à la Newsletter</h2>
-
-            <%= form.label :email, "Email :", style:"margin-bottom: 0.2em;  margin-top: 0.6em;" %>
-            <%= form.text_field :email, placeholder: "michel@example.com", style: "font-family: 'Fredoka'; font-size: 0.95em;"  %>
-
-            <div class="submit" style="margin-top: 1em; display: flex; justify-content: center">
-              <%= form.submit "S'inscrire à la newsletter", class:"btn-form", style:"font-family: 'Fredoka'; font-size:1.2em; color: white; background-color:red; border-radius: 5px;" %>
-            </div>
-        </div>
-      <% end %>
-      <div id="alert"></div>
-</div>
-  <div class="button-group" style="display: flex; justify-content: center; align-items:center; flex-direction: column; max-width: 80%; margin: 0 auto; margin-top: 2em; margin-bottom: 2em;">
-    <div class="beta-button second" style="text-decoration: none; color: white; cursor: pointer;" data-form-target="text" data-action="click->form#openHelperForm"> Formulaire 'Participer' ↓ </div>
-  </div>
-  <div data-form-target="formHelper" class="display-none">
-      <%= form_with do |form| %>
-        <div class="form-group" id="BETA" style="padding: 1em;">
-        <h2 class="title-text" style="font-size:1.6em;">Formulaire d'inscription aux tests (version Bêta)</h2>
-            <%= form.label :query, "Nom :", style:"margin-bottom: 0.2em;" %>
-            <%= form.text_field :query, placeholder: "Michel", style: "font-family: 'Fredoka'; font-size: 0.95em;" %>
-
-            <%= form.label :query, "Prénom :", style:"margin-bottom: 0.2em; margin-top: 0.6em" %>
-            <%= form.text_field :query, placeholder: "Albertino", style: "font-family: 'Fredoka'; font-size: 0.95em;" %>
-
-            <%= form.label :query, "Âge :", style:"margin-bottom: 0.2em; margin-top: 0.6em;" %>
-            <%= form.text_field :query, placeholder: "18", style: "font-family: 'Fredoka'; font-size: 0.95em;"  %>
-
-            <%= form.label :query, "Email :", style:"margin-bottom: 0.2em;  margin-top: 0.6em;" %>
-            <%= form.text_field :query, placeholder: "michel@example.com", style: "font-family: 'Fredoka'; font-size: 0.95em;"  %>
-
-            <%= form.label :query, "Ville :", style:"margin-bottom: 0.2em;  margin-top: 0.6em;" %>
-            <%= form.text_field :query, placeholder: "Lyon", style: "font-family: 'Fredoka'; font-size: 0.95em;"  %>
-
-            <%= form.label :query, "Situation pro :", style:"margin-bottom: 0.2em;  margin-top: 0.6em;" %>
-            <%= form.text_field :query, placeholder: "Cadre, étudiant...", style: "font-family: 'Fredoka'; font-size: 0.95em;"  %>
-
-              <div class="checkbox-container" style="margin-top: 0.2em;">
-            <ul>
-                <%= form.label :query, "Je souhaite être bêta-testeur*", style:" font-weight: 400;"  %>
-                <%= form.check_box :checkbox, class:"checkbox" %>
-            </ul>
-              </div>
-
-              <div class="text-betatest" style="display: inline-block; margin-top: -1em; font-style:italic; font-size: 0.9em; font-weight: 100;">
-                <ul>
-                <p>*J'accepte d'être contacté par l'organisation afin de participer à des tests de l'application mobile, je m'inscris également à la newsletter.</p>
-                </ul>
-              </div>
-
-            <div class="submit" style="margin-top: 1em; display: flex; justify-content: center">
-              <%= form.submit "Envoyer", class:"button-form" %>
-            </div>
-        </div>
-      <% end %>
-  </div>
-</div>
 <div class="between-container" style="margin-top: 1.5em; margin-bottom: 1.5em;">
   <h2 id="Contact" class="title-text"> <span class="under-line"> Derrière Origami... </span>
   </h2>
@@ -447,7 +394,7 @@ s
       <a href="#logo" style="margin-top: 2em;text-decoration: none;"><li style="display: flex; flex-direction:column; align-items: center;"><%= image_tag('SVG/logoTW', class: "footer-img", style: "width:120px")%> </li></a>
       <li style="margin-top: 2em; display: flex; flex-direction:column; align-items: center;"><%= link_to image_tag('https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/YouTube_social_white_squircle.svg/1200px-YouTube_social_white_squircle.svg.png', class: "footer-img", style: "width: 50px"), "https://www.youtube.com/channel/UC1ZpnwNF2hdMXw6Zibk9b8g" %> YouTube</li>
       <li style="margin-top: 2em;display: flex; flex-direction:column; align-items: center;"><%= link_to image_tag('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png', class: "footer-img", style: "width:50px"), "https://www.instagram.com/origamiapplication/" %> Instagram</li>
-      <a href="#Newsletter" style="margin-top: 2em;text-decoration: none; color: white;"><li style="display: flex; flex-direction:column; align-items: center;"><%= image_tag('https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg', class: "footer-img", style: "width:50px; color:white")%> La newsletter</li></a>
+      <a href="#Formulaire" style="margin-top: 2em;text-decoration: none; color: white;"><li style="display: flex; flex-direction:column; align-items: center;"><%= image_tag('https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg', class: "footer-img", style: "width:50px; color:white")%> La newsletter</li></a>
       <li style="margin-top: 2em;display: flex; flex-direction:column; align-items: center;"><%= link_to image_tag('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Facebook_F_icon.svg/2048px-Facebook_F_icon.svg.png', class: "footer-img", style: "width:50px; border-radius: 5px;"), "https://www.facebook.com/origamiapplication/" %> Facebook </li>
       <li style="margin-top: 2em;display: flex; flex-direction:column; align-items: center;"><%= link_to image_tag('https://files.helpdocs.io/zqc32mkmew/other/1608127986258/ideogram.png?t=1608127986258', class: "footer-img", style: "width:50px"), "https://lydia-app.com/collect/7799-orig-ami/fr" %> Nous soutenir </li>
     </div>

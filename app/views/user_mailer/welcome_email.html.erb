@@ -1,2 +1,98 @@
-toto
-<%= link_to 'toto', @unsubscribe_url %>
+<!DOCTYPE html>
+<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+  <meta name="x-apple-disable-message-reformatting">
+  <meta name="color-scheme" content="light dark">
+  <meta name="supported-color-schemes" content="light dark">
+  <title>Email title</title>
+  <!--[if mso]>
+  <xml>
+  <o:OfficeDocumentSettings>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+  </o:OfficeDocumentSettings>
+  </xml>
+  <![endif]-->
+  <style>
+    :root {
+      color-scheme: light dark;
+      supported-color-schemes: light dark;
+    }
+
+    .footer-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.5em;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  align-items: flex-end;
+}
+
+    .body, .container {
+      font-family: Arial, sans-serif;
+      color: #333;
+      background-color: #EEE;
+      text-shadow: 1px 1px 0.2px #f1f1f1;
+    }
+
+    .container {
+      padding: 30px;
+    }
+
+    .btn-gradient {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+  background: linear-gradient(#167FFB, #0F60C4);
+  transition: background 0.3s ease;
+  border: 1px solid #0F60C4;
+  text-shadow:none;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(#147EFF, #0F67DA);
+  color: white;
+}
+
+    h1 {
+      font-size: 24px;
+      margin: 0 0 20px 0;
+    }
+  </style>
+</head>
+<body class="body">
+  <div role="article" aria-roledescription="email" aria-label="Email title" lang="en" style="font-size:1rem">
+    <div class="container">
+      <!--[if true]>
+      <table role="presentation" width="100%" align="center" style="background:#EEE"><tr><td></td><td style="width:600px;background:#ffffff;padding:24px;">
+      <![endif]-->
+      <div style="max-width:600px; margin:0 auto;background:#f1f1f1;padding:24px;mso-padding-alt:0;">
+        <h1>Bienvenue dans l'aventure Origami ! </h1>
+        <div style="display: flex; justify-content: center; margin: 0 auto; max-width: 50%;">
+          <img src="https://zupimages.net/up/22/12/6tby.png" style="width: 100px">
+          </div>
+        <p>Votre inscription a bien été prise en compte</p>
+        <p>Nous vous enverrons régulièrement les dernières updates sur l'avancée de l'application mobile.</p>
+        <p>Vous pourrez également suivre l'aventure sur
+           <a href="https://www.youtube.com/channel/UC1ZpnwNF2hdMXw6Zibk9b8g"> YouTube </a> sous forme de Vlogs. Pour être encore plus proche des actualité Origami, suivez nous sur votre réseau social préféré juste ici : </p>
+            <div style="display: flex; flex-direction: column;  margin: 0 auto; margin-bottom: 1em; align-items: center;">
+<div class="btn-gradient"><a href="https://www.instagram.com/origamiapplication/" style="text-decoration: none; color: white">Facebook <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Facebook_F_icon.svg/2048px-Facebook_F_icon.svg.png" style="width: 20px;"></a></div>
+<div class="btn-gradient" style="margin-top: 1em;"><a href="https://www.facebook.com/origamiapplication/" style="text-decoration: none; color: white">Instagram <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png" style="width: 20px;"></a></div>
+      </div>
+        <p>
+          Pour vous désinscrire de cette newsletter, cliquez sur ce <a href="">LIEN</a> <br/><br>
+          La Team Origami 🤖
+        </p>
+      </div>
+      <!--[if true]>
+      </td></tr></table>
+      <![endif]-->
+    </div>
+  </div>
+</body>
+</html>
