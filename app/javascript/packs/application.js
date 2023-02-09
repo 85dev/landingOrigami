@@ -18,3 +18,6 @@ import "stylesheets/application";
 
 import "controllers"
 
+document.addEventListener('turbolinks:load', () => {
+
+})
