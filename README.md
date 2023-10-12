@@ -5,6 +5,7 @@ Required :
 - Nodejs
 - Ruby
 
-To launch ruby server :
+To launch rails server :
 ``` rails serve ``` 
 
+Then go to your localhost and you're ready to go
